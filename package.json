@@ -5,8 +5,25 @@
   "type": "module",
   "license": "MIT",
   "author": "Zonemation",
-  "repository": { "type": "git", "url": "git+https://github.com/stntr660/maroc-geo.git" },
-  "keywords": ["morocco", "maroc", "المغرب", "cities", "villes", "quartiers", "neighbourhoods", "regions", "topojson", "map", "hcp", "checkout", "address"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stntr660/maroc-geo.git"
+  },
+  "keywords": [
+    "morocco",
+    "maroc",
+    "المغرب",
+    "cities",
+    "villes",
+    "quartiers",
+    "neighbourhoods",
+    "regions",
+    "topojson",
+    "map",
+    "hcp",
+    "checkout",
+    "address"
+  ],
   "exports": {
     ".": "./dist/src/index.js",
     "./map": "./dist/src/map.js",
@@ -14,9 +31,15 @@
     "./data/*": "./data/*"
   },
   "types": "./dist/src/index.d.ts",
-  "files": ["dist", "data", "react", "DATA-LICENSES.md"],
+  "files": [
+    "dist",
+    "data",
+    "react",
+    "DATA-LICENSES.md"
+  ],
   "sideEffects": false,
   "scripts": {
+    "prepare": "tsc -p tsconfig.json",
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --test test/*.test.mjs",
     "check-data": "node scripts/check-data.mjs"
@@ -33,5 +56,7 @@
     "@types/topojson-specification": "^1.0.5",
     "typescript": "^5.6.3"
   },
-  "engines": { "node": ">=20.10" }
+  "engines": {
+    "node": ">=20.10"
+  }
 }
