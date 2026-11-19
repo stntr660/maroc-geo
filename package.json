@@ -1,0 +1,37 @@
+{
+  "name": "maroc-geo",
+  "version": "0.1.0",
+  "description": "Morocco geography for forms, delivery and dashboards: regions, provinces, communes (HCP 2024), 391 towns in French and Arabic, neighbourhoods of 14 big cities, a ready map (TopoJSON + d3) and forgiving search.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Zonemation",
+  "repository": { "type": "git", "url": "git+https://github.com/stntr660/maroc-geo.git" },
+  "keywords": ["morocco", "maroc", "المغرب", "cities", "villes", "quartiers", "neighbourhoods", "regions", "topojson", "map", "hcp", "checkout", "address"],
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./map": "./dist/src/map.js",
+    "./neighbourhoods": "./dist/src/neighbourhoods.js",
+    "./data/*": "./data/*"
+  },
+  "types": "./dist/src/index.d.ts",
+  "files": ["dist", "data", "react", "DATA-LICENSES.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "check-data": "node scripts/check-data.mjs"
+  },
+  "dependencies": {
+    "d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/d3-geo": "^3.1.0",
+    "@types/geojson": "^7946.0.14",
+    "@types/react": "^18.3.12",
+    "@types/topojson-client": "^3.1.5",
+    "@types/topojson-specification": "^1.0.5",
+    "typescript": "^5.6.3"
+  },
+  "engines": { "node": ">=20.10" }
+}

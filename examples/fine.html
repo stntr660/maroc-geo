@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>maroc-geo · communes</title>
+<style>
+  :root { --bg: #fff; --text: #111; --muted: #6b7280; --commune: #e8ecff; --edge: #fff; --arr: #2251ff; --prov: #111; }
+  body { margin: 0; font: 14px/1.4 system-ui, sans-serif; background: var(--bg); color: var(--text); }
+  main { display: grid; grid-template-columns: 1fr 1.4fr; gap: 16px; padding: 16px; max-width: 1200px; margin: 0 auto; }
+  @media (max-width: 760px) { main { grid-template-columns: 1fr; } }
+  h2 { font-size: 15px; margin: 0 0 4px; } p { margin: 0 0 8px; color: var(--muted); }
+  svg { width: 100%; height: auto; display: block; }
+  .commune { fill: var(--commune); stroke: #7f8fcf; stroke-width: .5; vector-effect: non-scaling-stroke; }
+  .commune.south { fill: #dfe5ff; }
+  .arr { fill: color-mix(in srgb, var(--arr) 18%, transparent); stroke: var(--arr); stroke-width: 1; vector-effect: non-scaling-stroke; }
+  .prov { fill: none; stroke: var(--prov); stroke-width: .8; vector-effect: non-scaling-stroke; }
+  .country { fill: none; stroke: var(--prov); stroke-width: .6; vector-effect: non-scaling-stroke; }
+  text { font-size: 2.2px; fill: #1a2a7a; text-anchor: middle; pointer-events: none; }
+</style>
+</head>
+<body>
+<main>
+  <section>
+    <h2>Maroc entier, 1 502 communes</h2>
+    <p id="n1">Les 12 fichiers data/map/communes-XX.topo.json, provinces du Sud comprises.</p>
+    <svg id="all" viewBox="0 0 520 560"></svg>
+  </section>
+  <section>
+    <h2>Casablanca-Settat (06) : communes, et arrondissements de Casablanca</h2>
+    <p id="n2">Communes en gris-bleu, limites des provinces en noir, 16 arrondissements en bleu.</p>
+    <svg id="zoom" viewBox="0 0 520 560"></svg>
+  </section>
+</main>
+<!-- Serve the repo root (e.g. `python3 -m http.server`) and open /examples/fine.html. -->
+<script src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script type="module">
+const W = 520, H = 560, NS = "http://www.w3.org/2000/svg";
+const get = (u) => fetch(u).then((r) => r.json());
+const regions = ["01","02","03","04","05","06","07","08","09","10","11","12"];
+const [base, arrTopo, ...communeTopos] = await Promise.all([
+  get("../data/morocco.topo.json"), get("../data/map/arrondissements.topo.json"),
+  ...regions.map((r) => get(`../data/map/communes-${r}.topo.json`)),
+]);
+const feats = (t, o) => topojson.feature(t, t.objects[o]).features;
+const regionShapes = feats(base, "regions");
+// Same projection as layoutMorocco(): fit the 12 regions.
+const projection = d3.geoMercator().fitExtent([[12, 12], [W - 12, H - 12]], { type: "FeatureCollection", features: regionShapes });
+const path = d3.geoPath(projection);
+const add = (svg, d, cls) => { const p = document.createElementNS(NS, "path"); p.setAttribute("d", d); p.setAttribute("class", cls); svg.appendChild(p); return p; };
+
+const all = document.getElementById("all");
+let count = 0;
+communeTopos.forEach((t, i) => feats(t, "communes").forEach((f) => {
+  count++;
+  add(all, path(f), "commune" + (["10","11","12"].includes(regions[i]) ? " south" : ""));
+}));
+add(all, path(topojson.mesh(base, base.objects.regions, (a, b) => a !== b)), "prov");
+add(all, path(topojson.mesh(base, base.objects.regions, (a, b) => a === b)), "country");
+document.getElementById("n1").textContent = `${count} communes dans 12 fichiers, provinces du Sud comprises.`;
+
+const zoom = document.getElementById("zoom");
+const c06 = feats(communeTopos[5], "communes");
+c06.forEach((f) => add(zoom, path(f), "commune"));
+add(zoom, path(topojson.mesh(base, base.objects.provinces, (a, b) => a.properties.region === "06" || b.properties.region === "06")), "prov");
+const casa = feats(arrTopo, "arrondissements").filter((f) => f.properties.city === "Casablanca");
+casa.forEach((f) => add(zoom, path(f), "arr"));
+// zoom on the Casablanca area (Casablanca + Mohammedia + Médiouna + Nouaceur)
+const focus = c06.filter((f) => ["06.141", "06.371", "06.385", "06.355"].some((p) => f.properties.province === p));
+const [[x0, y0], [x1, y1]] = path.bounds({ type: "FeatureCollection", features: focus });
+const s = Math.max((x1 - x0) / W, (y1 - y0) / H) * 1.08;
+zoom.setAttribute("viewBox", `${(x0 + x1) / 2 - (W * s) / 2} ${(y0 + y1) / 2 - (H * s) / 2} ${W * s} ${H * s}`);
+for (const f of casa) {
+  const [x, y] = path.centroid(f);
+  const t = document.createElementNS(NS, "text");
+  t.setAttribute("x", x); t.setAttribute("y", y); t.style.fontSize = `${W * s * 0.017}px`;
+  t.textContent = f.properties.fr; zoom.appendChild(t);
+}
+document.getElementById("n2").textContent = `${c06.length} communes de la région 06, ${casa.length} arrondissements de Casablanca.`;
+document.body.dataset.ready = "1";
+</script>
+</body>
+</html>

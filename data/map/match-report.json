@@ -1,0 +1,106 @@
+{
+ "built": "2026-11-19",
+ "sources": {
+  "geometry": "https://download.geofabrik.de/africa/morocco-latest.osm.pbf (ODbL 1.0, (c) OpenStreetMap contributors)",
+  "codes": "HCP RGPH 2024 via morocco-communes@1.9.1 (CC BY 4.0, Haut-Commissariat au Plan)",
+  "osmTimestamp": "2026-11-18 (Geofabrik morocco-261118.osm.pbf)"
+ },
+ "communes": {
+  "hcpTotal": 1503,
+  "withShape": 1502,
+  "byMethod": {
+   "ref": 1488,
+   "alias": 14,
+   "name": 0,
+   "ref-only": 0
+  },
+  "southernProvincesWithShape": 86,
+  "missing": [
+   {
+    "code": "04.281.05.11",
+    "fr": "Sidi Mohamed Benmansour",
+    "ar": "سيدي محمد بنمنصور"
+   }
+  ],
+  "refOnly": [],
+  "unmatchedOsm": [],
+  "severalShapesMerged": [],
+  "provinceMismatch": [
+   {
+    "code": "05.255.09.03",
+    "fr": "Bni Chegdale",
+    "osm": 2882498,
+    "provinceAtPoint": "06.461"
+   },
+   {
+    "code": "04.491.01.09",
+    "fr": "Sidi Yahia El Gharb",
+    "osm": 2804276,
+    "provinceAtPoint": "04.281"
+   }
+  ]
+ },
+ "arrondissements": {
+  "hcpTotal": 41,
+  "withShape": 41,
+  "byMethod": {
+   "ref": 41,
+   "alias": 0,
+   "name": 0,
+   "ref-only": 0
+  },
+  "missing": [],
+  "refOnly": [],
+  "unmatchedOsm": [
+   {
+    "osm": 4743044,
+    "name": "Préfecture d'arrondissements de Sidi Bernoussi عمالة مقاطعات سيدي البرنوصي",
+    "ref": null,
+    "provinceAtPoint": "06.141"
+   },
+   {
+    "osm": 4743032,
+    "name": "Préfecture d'arrondissements de Moulay Rachid عمالة مقاطعات مولاي رشيد",
+    "ref": null,
+    "provinceAtPoint": "06.141"
+   },
+   {
+    "osm": 4742974,
+    "name": "Préfecture d'arrondissements d'Aïn Sebaâ-Hay Mohammadi عمالة مقاطعات عين السبع الحي المحمدي",
+    "ref": "06.141.01.2",
+    "provinceAtPoint": "06.141"
+   },
+   {
+    "osm": 4742936,
+    "name": "Préfecture d’arrondissements Al Fida-Mers Sultan عمالة مقاطعات الفداء مرس السلطان",
+    "ref": null,
+    "provinceAtPoint": "06.141"
+   },
+   {
+    "osm": 4742799,
+    "name": "Préfecture d'arrondissements de Ben M'sick عمالة مقاطعات ابن مسيك",
+    "ref": null,
+    "provinceAtPoint": "06.141"
+   },
+   {
+    "osm": 4742849,
+    "name": "Préfecture d'arrondissement d'Aïn Chock عمالة مقاطعة عين الشق",
+    "ref": null,
+    "provinceAtPoint": "06.141"
+   },
+   {
+    "osm": 4743065,
+    "name": "Préfecture d'arrondissement de Hay Hassani عمالة مقاطعة الحي الحسني",
+    "ref": null,
+    "provinceAtPoint": "06.141"
+   },
+   {
+    "osm": 4743212,
+    "name": "Préfecture d'arrondissements de Casablanca-Anfa عمالة مقاطعات الدار البيضاء أنفا",
+    "ref": null,
+    "provinceAtPoint": "06.141"
+   }
+  ],
+  "severalShapesMerged": []
+ }
+}

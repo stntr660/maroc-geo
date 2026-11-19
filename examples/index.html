@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>maroc-geo · démo</title>
+<style>
+  :root { --fill: #2251ff; --empty: #e5e7eb; --border: #fff; --text: #111; --muted: #6b7280; --bg: #fff; }
+  @media (prefers-color-scheme: dark) { :root { --empty: #374151; --border: #111827; --text: #f3f4f6; --muted: #9ca3af; --bg: #111827; } }
+  body { margin: 0; font: 15px/1.5 system-ui, sans-serif; background: var(--bg); color: var(--text); }
+  main { max-width: 980px; margin: 0 auto; padding: 24px 16px; display: grid; gap: 24px; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+  @media (max-width: 760px) { main { grid-template-columns: 1fr; } }
+  h1 { font-size: 20px; margin: 0 0 4px; } p { color: var(--muted); margin: 0 0 12px; }
+  svg path.region { cursor: pointer; transition: opacity .3s; } svg { width: 100%; height: auto; transition: all .5s; }
+  input { width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--muted); border-radius: 8px; background: transparent; color: inherit; font: inherit; }
+  ul { list-style: none; padding: 0; margin: 8px 0 0; max-height: 320px; overflow: auto; }
+  li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 4px; border-bottom: 1px solid color-mix(in srgb, var(--muted) 25%, transparent); }
+  li span:last-child { color: var(--muted); }
+  label { display: block; font-weight: 600; margin: 16px 0 6px; }
+  select { padding: 8px; border-radius: 8px; font: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <section>
+    <h1>Carte du Maroc</h1>
+    <p id="info">12 régions (HCP 2024). Cliquez une région pour zoomer, cliquez à nouveau pour revenir.</p>
+    <svg id="map" viewBox="0 0 520 560" role="img" aria-label="Carte du Maroc"></svg>
+  </section>
+  <section>
+    <label for="city">Ville</label>
+    <select id="city"></select>
+    <label for="q">Quartier</label>
+    <input id="q" placeholder="maarif, حي حسني, sidi mouman…" autocomplete="off">
+    <ul id="list"></ul>
+  </section>
+</main>
+<!-- Demo only: the package itself uses d3-geo + topojson-client from npm. Serve the repo root (e.g. `npx serve .`) and open /examples/. -->
+<script src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script type="module">
+const W = 520, H = 560, NS = "http://www.w3.org/2000/svg";
+const [topo, regions, cities, nb] = await Promise.all(
+  ["../data/morocco.topo.json", "../data/regions.json", "../data/cities-geonames.json", "../data/neighbourhoods.json"].map((u) => fetch(u).then((r) => r.json())),
+);
+const shapes = topojson.feature(topo, topo.objects.regions).features;
+const projection = d3.geoMercator().fitExtent([[12, 12], [W - 12, H - 12]], { type: "FeatureCollection", features: shapes });
+const path = d3.geoPath(projection);
+const svg = document.getElementById("map");
+const el = (tag, attrs) => {
+  const n = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+  return n;
+};
+
+// Demo value per region: total population of its big cities (GeoNames).
+const regionOf = (lng, lat) => shapes.find((s) => d3.geoContains(s, [lng, lat]))?.properties.code;
+const value = {};
+for (const c of cities) { const r = regionOf(c.lng, c.lat); if (r) value[r] = (value[r] ?? 0) + c.population; }
+const max = Math.max(...Object.values(value));
+let selected = null;
+
+for (const s of shapes) {
+  const code = s.properties.code, v = value[code] ?? 0;
+  const name = regions.find((r) => r.code === code);
+  const p = el("path", { d: path(s), class: "region", fill: v ? "var(--fill)" : "var(--empty)", "fill-opacity": v ? 0.14 + 0.8 * Math.sqrt(v / max) : 0.7, "data-code": code });
+  p.appendChild(el("title", {})).textContent = `${name.fr} · ${name.ar} · ${v.toLocaleString("fr")} hab. (grandes villes)`;
+  p.addEventListener("click", () => zoom(code === selected ? null : code));
+  svg.appendChild(p);
+}
+svg.appendChild(el("path", { d: path(topojson.mesh(topo, topo.objects.regions, (a, b) => a !== b)), fill: "none", stroke: "var(--border)", "stroke-width": 1.2, "pointer-events": "none" }));
+for (const c of cities.filter((c) => c.population > 150000)) {
+  const [x, y] = projection([c.lng, c.lat]);
+  const dot = el("circle", { cx: x, cy: y, r: 2 + 9 * Math.sqrt(c.population / 3.7e6), fill: "#f97316", "fill-opacity": 0.8, stroke: "var(--border)" });
+  dot.appendChild(el("title", {})).textContent = `${c.name} · ${c.population.toLocaleString("fr")} hab.`;
+  svg.appendChild(dot);
+}
+function zoom(code) {
+  selected = code;
+  svg.querySelectorAll("path.region").forEach((p) => (p.style.opacity = code && p.dataset.code !== code ? 0.3 : 1));
+  if (!code) return svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const [[x0, y0], [x1, y1]] = path.bounds(shapes.find((s) => s.properties.code === code));
+  const s = Math.max(((x1 - x0) * 1.24) / W, ((y1 - y0) * 1.24) / H);
+  svg.setAttribute("viewBox", `${(x0 + x1) / 2 - (W * s) / 2} ${(y0 + y1) / 2 - (H * s) / 2} ${W * s} ${H * s}`);
+}
+
+// Neighbourhood search (same folding as src/normalize.ts, simplified: no typo tolerance).
+const norm = (t) => t.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[ً-ٟـٰ]/g, "").replace(/[أإآٱ]/g, "ا").replace(/ة/g, "ه").replace(/[ىئ]/g, "ي").toLowerCase().replace(/[^a-z0-9؀-ۿ]/g, "");
+const select = document.getElementById("city"), input = document.getElementById("q"), list = document.getElementById("list");
+select.innerHTML = Object.keys(nb.cities).map((c) => `<option>${c}</option>`).join("");
+function render() {
+  const c = nb.cities[select.value], q = norm(input.value);
+  const rows = q ? c.all.filter((n) => [n.fr, n.ar, ...n.aliases].some((k) => k && norm(k).includes(q))).slice(0, 60) : c.main;
+  list.innerHTML = "";
+  for (const n of rows) {
+    const li = document.createElement("li");
+    li.append(Object.assign(document.createElement("span"), { textContent: n.fr }), Object.assign(document.createElement("span"), { textContent: n.ar, dir: "rtl" }));
+    list.append(li);
+  }
+}
+select.onchange = input.oninput = render;
+render();
+</script>
+</body>
+</html>
