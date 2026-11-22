@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { findCities, placeCity, placeRegion, normalizeText, REGIONS, CITIES, PROVINCES, COMMUNES, aggregateByPlace } from "../dist/src/index.js";
-import { neighbourhoodsFor, searchNeighbourhoods, NEIGHBOURHOOD_CITIES } from "../dist/src/neighbourhoods.js";
+import { neighbourhoodsFor, mainNeighbourhoods, searchNeighbourhoods, NEIGHBOURHOOD_CITIES } from "../dist/src/neighbourhoods.js";
 import { layoutMorocco, moroccoShapes, CITY_POINTS } from "../dist/src/map.js";
 
 test("data sizes", () => {
@@ -52,6 +52,20 @@ test("neighbourhoods: list and search", () => {
   assert.ok(casa.main.length >= 40 && casa.all.length > 1000);
   assert.equal(searchNeighbourhoods(casa, "maarif")[0].fr, "Maârif");
   assert.equal(searchNeighbourhoods(casa, "").length, casa.main.length);
+  // default list = well-known quartiers only, every entry with an Arabic name is in it
+  assert.ok(casa.main.length < 120);
+  assert.ok(casa.main.some((n) => n.fr === "Nassim" && n.ar === "النسيم"));
+  assert.ok(!casa.main.some((n) => n.fr === "Abdelhay"));
+  assert.deepEqual(mainNeighbourhoods("Casablanca"), casa.main);
+  for (const c of NEIGHBOURHOOD_CITIES) {
+    const l = neighbourhoodsFor(c);
+    const known = new Set(l.main.map((n) => n.fr));
+    assert.ok(l.all.every((n) => !n.ar || known.has(n.fr) || n.fr === "El Faïd"), c);
+  }
+  // one letter only filters main; two letters search everything, well-known first
+  assert.ok(searchNeighbourhoods(casa, "a").every((n) => casa.main.includes(n)));
+  assert.equal(searchNeighbourhoods(casa, "abdelhay")[0].fr, "Abdelhay");
+  assert.equal(searchNeighbourhoods(casa, "النسيم")[0].fr, "Nassim");
   assert.ok(neighbourhoodsFor("Mohammadia"));
   assert.equal(neighbourhoodsFor("Ouarzazate"), null);
 });

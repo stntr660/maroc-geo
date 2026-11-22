@@ -1,9 +1,10 @@
 /**
- * "Quartier" field for a checkout form (React). Shows the well-known
- * neighbourhoods of the chosen city when focused, searches the full list as
- * the customer types (French, Arabic, typos), and still accepts a free value
- * when the neighbourhood is not in the list. Renders nothing for a city
- * without a list.
+ * "Quartier" / « الحي » field for a checkout form (React). Shows only the
+ * well-known neighbourhoods of the chosen city (`main`) when focused, searches
+ * the full list from two letters typed (French, Arabic, typos; well-known
+ * ones first), and still accepts a free value when the neighbourhood is not in
+ * the list. Renders nothing for a city without a list. Latin names stay
+ * left-to-right inside an Arabic page.
  *
  * Copy this file into your app (it is not part of the npm build). It expects
  * an API route that returns neighbourhoodsFor(city), so the 1 MB list stays on
@@ -24,15 +25,31 @@ import { searchNeighbourhoods, type Neighbourhood } from "../src/neighbourhoods.
 
 type List = { main: Neighbourhood[]; all: Neighbourhood[] };
 
+/** Default texts. Darija: « الحي » (plural « الأحياء »), never « الحومة ». */
+const TEXTS = {
+  fr: {
+    label: "Quartier",
+    placeholder: "Ex. : Maârif, Hay Mohammadi…",
+    otherText: "Quartier absent de la liste : il sera gardé tel quel.",
+    listLabel: "Quartiers",
+  },
+  ar: {
+    label: "الحي",
+    placeholder: "مثلا: المعاريف، الحي المحمدي…",
+    otherText: "الحي ماشي فاللائحة؟ غادي نخليو داكشي اللي كتبتي.",
+    listLabel: "الأحياء",
+  },
+} as const;
+
 export function NeighbourhoodField({
   id,
   city,
   value,
   onChange,
-  label = "Quartier",
-  placeholder = "Choisissez ou tapez votre quartier",
-  otherText = "Quartier absent de la liste : il sera gardé tel quel.",
   locale = "fr",
+  label = TEXTS[locale].label,
+  placeholder = TEXTS[locale].placeholder,
+  otherText = TEXTS[locale].otherText,
   endpoint = "/api/neighbourhoods",
   onAvailable,
   className,
@@ -80,7 +97,11 @@ export function NeighbourhoodField({
 
   const q = normalizeText(value);
   const known = results.some((n) => normalizeText(n.fr) === q || (!!n.ar && normalizeText(n.ar) === q));
-  const show = (n: Neighbourhood) => (locale === "ar" && n.ar ? n.ar : n.fr);
+  // Arabic page: Arabic name, French name as a hint. French page: the reverse.
+  // Latin names are isolated left-to-right so "Ben M'Sick" or "2 Mars" do not reorder in RTL.
+  const primary = (n: Neighbourhood) => (locale === "ar" && n.ar ? n.ar : n.fr);
+  const hint = (n: Neighbourhood) => (locale === "ar" ? (n.ar ? n.fr : "") : n.ar);
+  const dirOf = (text: string) => (/[\u0600-\u06FF]/.test(text) ? "rtl" : "ltr");
   const pick = (n: Neighbourhood) => {
     onChange(n.fr);
     setOpen(false);
@@ -113,12 +134,12 @@ export function NeighbourhoodField({
         }}
       />
       {open && (
-        <ul id={`${id}-list`} role="listbox" data-mg="list" style={{ position: "absolute", insetInline: 0, top: "100%", zIndex: 30, maxHeight: 288, overflowY: "auto", margin: 0, padding: 0, listStyle: "none" }}>
+        <ul id={`${id}-list`} role="listbox" aria-label={TEXTS[locale].listLabel} data-mg="list" style={{ position: "absolute", insetInline: 0, top: "100%", zIndex: 30, maxHeight: 288, overflowY: "auto", margin: 0, padding: 0, listStyle: "none" }}>
           {results.map((n, i) => (
             <li key={n.fr} role="option" aria-selected={i === active} data-mg="option" ref={i === active ? (el) => el?.scrollIntoView({ block: "nearest" }) : undefined}>
               <button type="button" onMouseDown={(e) => e.preventDefault()} onClick={() => pick(n)} onMouseEnter={() => setActive(i)} style={{ display: "flex", width: "100%", justifyContent: "space-between", gap: 12 }}>
-                <span>{show(n)}</span>
-                {n.ar && locale !== "ar" && <span dir="rtl">{n.ar}</span>}
+                <bdi dir={dirOf(primary(n))}>{primary(n)}</bdi>
+                {hint(n) && <bdi dir={dirOf(hint(n))} data-mg="hint">{hint(n)}</bdi>}
               </button>
             </li>
           ))}

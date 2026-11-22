@@ -3,8 +3,12 @@
  * data is about 1 MB: import it on the server, or behind an API route, and send
  * the browser one city at a time.
  *
- * `main` = well-known neighbourhoods, shown when nothing is typed.
- * `all`  = the full cleaned list (includes main), for search.
+ * `main` = well-known neighbourhoods (every entry with an Arabic name, plus the
+ *          delivery zones, arrondissements and other verified ones): show this
+ *          list by default, never the full one.
+ * `all`  = the full cleaned list (includes main), for search only: it holds
+ *          many small lotissements and street-like names a customer would not
+ *          recognise when scrolling.
  */
 import data from "../data/neighbourhoods.json" with { type: "json" };
 import { normalizeText, score } from "./normalize.js";
@@ -47,17 +51,27 @@ export function neighbourhoodsFor(city: string): { main: Neighbourhood[]; all: N
   return { main, all: [...main, ...c.all.filter((n) => !seen.has(n.fr)).map(slim)] };
 }
 
+/** Well-known neighbourhoods of a city (the default list of a picker), or null when the city has no list. */
+export function mainNeighbourhoods(city: string): Neighbourhood[] | null {
+  return neighbourhoodsFor(city)?.main ?? null;
+}
+
 /**
- * Search a neighbourhood list (French, Arabic, aliases, typos). Empty query
- * returns `main`. Works in the browser on the list returned by neighbourhoodsFor.
+ * Search a neighbourhood list (French, Arabic, aliases, typos). Under two
+ * letters typed it only filters `main` (an empty query returns `main`); from
+ * two letters it searches `all`: exact matches, then well-known neighbourhoods,
+ * then the rest, typo matches last. Works in the browser on the list returned
+ * by neighbourhoodsFor.
  */
 export function searchNeighbourhoods(list: { main: Neighbourhood[]; all: Neighbourhood[] }, raw: string, limit = 40): Neighbourhood[] {
   const q = normalizeText(raw);
   if (!q) return list.main;
-  return list.all
-    .map((n) => ({ n, best: Math.max(0, ...[n.fr, n.ar, ...n.aliases].map(normalizeText).filter(Boolean).map((k) => score(q, k))) }))
+  const known = new Set(list.main.map((n) => n.fr));
+  const rank = (r: { main: boolean; best: number }) => (r.best === 100 ? 3 : r.best >= 60 ? (r.main ? 2 : 1) : 0);
+  return (q.length < 2 ? list.main : list.all)
+    .map((n) => ({ n, main: known.has(n.fr), best: Math.max(0, ...[n.fr, n.ar, ...n.aliases].map(normalizeText).filter(Boolean).map((k) => score(q, k))) }))
     .filter((r) => r.best > 0)
-    .sort((a, b) => b.best - a.best || a.n.fr.length - b.n.fr.length)
+    .sort((a, b) => rank(b) - rank(a) || b.best - a.best || a.n.fr.length - b.n.fr.length)
     .slice(0, limit)
     .map((r) => r.n);
 }

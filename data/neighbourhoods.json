@@ -1,6 +1,6 @@
 {
- "source": "Noms de quartiers : (1) Barid Al-Maghrib / Poste Maroc, Annuaire du code postal, édition 2012, « Codes quartiers des 24 grandes villes » (https://www.codepostal.ma/annuaire.pdf) ; (2) © OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright), objets place=suburb|quarter|neighbourhood et arrondissements (boundary=administrative, admin_level 10/11) dans la limite administrative de chaque ville, extrait Geofabrik morocco-latest du 2026-11-18 ; (3) OzonExpress, zones de livraison « Casablanca – <Quartier> » ; (4) Wikipédia FR/AR (listes de quartiers des articles de ville) et Wikidata (libellés). « main » = quartiers principaux (zone OzonExpress, arrondissement, place=suburb/quarter OSM, liste Wikipédia, ou présent à la fois dans l’annuaire et OSM) ; « all » = liste complète nettoyée pour la recherche (inclut « main »). Arabe uniquement repris d’une source citée dans src (préfixe ar: quand il diffère de la source du nom) ; vide sinon.",
- "generatedAt": "2026-11-18",
+ "source": "Noms de quartiers : (1) Barid Al-Maghrib / Poste Maroc, Annuaire du code postal, édition 2012, « Codes quartiers des 24 grandes villes » (https://www.codepostal.ma/annuaire.pdf) ; (2) © OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright), objets place=suburb|quarter|neighbourhood et arrondissements (boundary=administrative, admin_level 10/11) dans la limite administrative de chaque ville, extrait Geofabrik morocco-latest du 2026-11-18 ; (3) OzonExpress, zones de livraison « Casablanca – <Quartier> » ; (4) Wikipédia FR/AR (listes de quartiers des articles de ville) et Wikidata (libellés). « main » = quartiers connus, montrés par défaut (zone OzonExpress, arrondissement, place=suburb/quarter OSM, liste Wikipédia, présent à la fois dans l’annuaire et OSM, ou ayant un nom arabe) ; « all » = liste complète nettoyée pour la recherche (inclut « main »). Arabe repris d’une source citée dans src (préfixe ar: quand il diffère de la source du nom), ou ajouté à la main pour des quartiers très connus (src « ar:ajout manuel 2026-11-22 », quelques quartiers absents des sources : src « manuel:2026-11-22 ») ; vide sinon.",
+ "generatedAt": "2026-11-22",
  "cities": {
   "Casablanca": {
    "main": [
@@ -14,11 +14,27 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=44 ; ozon:Casablanca – 2 Mars ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/مقاطعة_المعاريف (tableau : « حي 2 مارس » = « Quartier 2 Mars »)"
     },
     {
+     "fr": "Adil",
+     "ar": "حي عادل",
+     "aliases": [
+      "Hay Adil"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,37 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Ahl Assalam",
+     "ar": "أهل السلام",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/4200387943"
+    },
+    {
      "fr": "Ain Borja",
-     "ar": "",
+     "ar": "عين البرجة",
      "aliases": [],
      "ozon": true,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=38 ; ozon:Casablanca – Ain Borja"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=38 ; ozon:Casablanca – Ain Borja ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Aïn Chock",
@@ -45,6 +61,16 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=38 ; osm:node/2186602665 ; osm:relation/2801460 (arrondissement) ; ozon:Casablanca – Ain Sebaa"
     },
     {
+     "fr": "Al Azhar",
+     "ar": "الأزهر",
+     "aliases": [
+      "Lot Al Azhar",
+      "Hay Al Azhar"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=36,38 ; osm:node/5676756427 ; osm:node/14246921392"
+    },
+    {
      "fr": "Al Fida",
      "ar": "الفداء",
      "aliases": [
@@ -52,6 +78,38 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46 ; osm:node/2186560402 ; osm:relation/2801452 (arrondissement)"
+    },
+    {
+     "fr": "Al Houria",
+     "ar": "الحرية",
+     "aliases": [
+      "Hay El Hourria",
+      "Hay Houria",
+      "El Hourria",
+      "Houria"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,39,44,47 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Al Massira",
+     "ar": "المسيرة",
+     "aliases": [
+      "Hay Al Massira",
+      "Al Masira",
+      "Massira"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,39,50 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Al Quds",
+     "ar": "القدس",
+     "aliases": [
+      "Al Qods"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=39 ; osm:node/2238568837"
     },
     {
      "fr": "Anassi",
@@ -84,6 +142,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=40 ; osm:node/2816671962"
     },
     {
+     "fr": "Bachkou",
+     "ar": "باشكو",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=41 ; osm:node/12250555074"
+    },
+    {
      "fr": "Beauséjour",
      "ar": "بوسيجور",
      "aliases": [],
@@ -105,6 +170,13 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=42 ; osm:node/2186534692 ; osm:relation/2801410 (arrondissement)"
+    },
+    {
+     "fr": "Berger",
+     "ar": "بيرجي",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=42 ; osm:node/13111279501"
     },
     {
      "fr": "Bourgogne",
@@ -132,6 +204,37 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=42 ; osm:node/12207065976 ; ozon:Casablanca – Californie"
     },
     {
+     "fr": "Carrières Centrales",
+     "ar": "كريان سنطرال",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/5181579620"
+    },
+    {
+     "fr": "Carrières Rehamna",
+     "ar": "كريان الرحامنة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/5181579617"
+    },
+    {
+     "fr": "Casa Anfa",
+     "ar": "كازا أنفا",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/13158317482 ; ar:wikidata:Q136503131"
+    },
+    {
+     "fr": "Casablanca Finance City",
+     "ar": "القطب المالي للدار البيضاء",
+     "aliases": [
+      "Casa Finance City",
+      "CFC"
+     ],
+     "ozon": false,
+     "src": "osm:node/12223124337"
+    },
+    {
      "fr": "Centre Ville",
      "ar": "وسط المدينة",
      "aliases": [
@@ -148,6 +251,22 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=42 ; osm:node/12189837248 ; osm:relation/18099040 (arrondissement)"
     },
     {
+     "fr": "Cité Plateau",
+     "ar": "سيتي بلاطو",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=30 ; osm:node/5467941989 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/مقاطعة_المعاريف (tableau : « حي سيتي بلاطو » = « Quartier City Platou »)"
+    },
+    {
+     "fr": "Derb El Kabir",
+     "ar": "الدرب الكبير",
+     "aliases": [
+      "Derb Kabir"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=31 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Derb Ghallef",
      "ar": "درب غلف",
      "aliases": [
@@ -156,6 +275,13 @@
      ],
      "ozon": false,
      "src": "osm:node/12207089177 ; barid:https://www.codepostal.ma/annuaire.pdf#page=46 ; barid:https://www.codepostal.ma/annuaire.pdf#page=32"
+    },
+    {
+     "fr": "Derb Milan",
+     "ar": "درب ميلان",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=32 ; osm:node/13373093206"
     },
     {
      "fr": "Derb Omar",
@@ -179,6 +305,47 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=44 ; osm:node/12189839361"
     },
     {
+     "fr": "Elhaj fateh",
+     "ar": "الحاج فاتح",
+     "aliases": [
+      "Haj fateh"
+     ],
+     "ozon": false,
+     "src": "osm:node/14246921393"
+    },
+    {
+     "fr": "Errahma",
+     "ar": "حي الرحمة",
+     "aliases": [
+      "Hay Errahma"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,45 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Ferme Bretonne",
+     "ar": "ضيعة بروطون",
+     "aliases": [
+      "Ferme Bretone"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=45 ; osm:node/6037675578"
+    },
+    {
+     "fr": "Florida",
+     "ar": "فلوريدا",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "France Ville",
+     "ar": "فرونزبيل",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/مقاطعة_المعاريف (tableau : « حي فرونزبيل » = « Quartier France-Ville »)"
+    },
+    {
      "fr": "Gauthier",
      "ar": "غوتيي",
      "aliases": [
@@ -189,11 +356,37 @@
      "src": "osm:node/12189801867 ; osm:relation/18099083 (arrondissement) ; barid:https://www.codepostal.ma/annuaire.pdf#page=35,46"
     },
     {
+     "fr": "Ghandi",
+     "ar": "غاندي",
+     "aliases": [
+      "Gandhi"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Gotaa Ould Aicha",
+     "ar": "مقطع ولد عائشة",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/مقاطعة_المعاريف (tableau : « حي مقطع ولد عائشة »)"
+    },
+    {
      "fr": "Habous",
      "ar": "الحبوس",
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46 ; ar:wikidata:Q2405581"
+    },
+    {
+     "fr": "Hay El Farah",
+     "ar": "حي الفرح",
+     "aliases": [
+      "El Farah",
+      "Hay Farah"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,44 ; osm:node/4206033473 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay El Hana",
@@ -206,11 +399,41 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,38,44 ; osm:node/2697113681 ; osm:relation/3547784 (arrondissement)"
     },
     {
+     "fr": "Hay El Houda",
+     "ar": "حي الهدى",
+     "aliases": [
+      "Hay Houda",
+      "Houda"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,47 ; osm:node/3769564848"
+    },
+    {
      "fr": "Hay Hassani",
      "ar": "الحي الحسني",
      "aliases": [],
      "ozon": true,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35 ; osm:node/2186506069 ; osm:node/13920124963 ; osm:relation/2801343 (arrondissement) ; ozon:Casablanca – Hay Hassani"
+    },
+    {
+     "fr": "Hay Laalou",
+     "ar": "حي لعلو",
+     "aliases": [
+      "Laalou"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=49 ; osm:node/13577985530"
+    },
+    {
+     "fr": "Hay Mabrouka",
+     "ar": "حي مبروكة",
+     "aliases": [
+      "Cite Mabrouka",
+      "Lot Mabrouka",
+      "Mabrouka"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=30,37,50 ; osm:node/10279055675"
     },
     {
      "fr": "Hay Mohammadi",
@@ -222,11 +445,69 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,51 ; osm:node/2186592254 ; osm:relation/2801458 (arrondissement) ; ozon:Casablanca – Hay Mohammadi ; ar:osm:relation (arrondissement de Hay Mohammadi, name:ar مقاطعة الحي المحمدي) ; ar.wikipedia:https://ar.wikipedia.org/wiki/قائمة_أحياء_الدار_البيضاء"
     },
     {
+     "fr": "Hay Moulay Abdellah",
+     "ar": "حي مولاي عبد الله",
+     "aliases": [
+      "Moulay Abdelleh",
+      "Hay My Abdellah"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,51 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Hay Salama",
+     "ar": "حي السلامة",
+     "aliases": [
+      "Salama"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=36,54 ; osm:node/4211194805 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Inara",
+     "ar": "حي الإنارة",
+     "aliases": [
+      "Al Inara",
+      "Inarai",
+      "Hay Inara"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=39,47 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Jamila",
      "ar": "",
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=47,48 ; osm:node/3769564844 ; osm:node/3769564845 ; osm:node/3769564846"
+    },
+    {
+     "fr": "La Palmeraie",
+     "ar": "النخيل",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/5604704421"
+    },
+    {
+     "fr": "Lahraouiyine",
+     "ar": "الهراويين",
+     "aliases": [
+      "Lahraouyine",
+      "Lhraouiyine",
+      "Al Harraouiyine"
+     ],
+     "ozon": false,
+     "src": "manuel:2026-11-22 (quartier connu absent des sources)"
+    },
+    {
+     "fr": "Les Crêtes",
+     "ar": "لي كريت",
+     "aliases": [
+      "Hay Cretes",
+      "Cretes"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,43 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Les Hôpitaux",
@@ -236,6 +517,13 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=47 ; osm:node/12241613617"
+    },
+    {
+     "fr": "Les Princesses",
+     "ar": "الأميرات",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/12244922250"
     },
     {
      "fr": "Lissasfa",
@@ -270,6 +558,15 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=50,51 ; osm:node/2186570857 ; osm:relation/2801453 (arrondissement)"
     },
     {
+     "fr": "Moulay Driss",
+     "ar": "مولاي إدريس",
+     "aliases": [
+      "Mly Driss"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=51 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Moulay Rachid",
      "ar": "مولاي رشيد",
      "aliases": [
@@ -277,6 +574,13 @@
      ],
      "ozon": true,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=51 ; osm:node/2186528763 ; osm:relation/2801402 (arrondissement) ; ozon:Casablanca – Moulay Rachid"
+    },
+    {
+     "fr": "Nassim",
+     "ar": "النسيم",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=52 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Oasis",
@@ -307,6 +611,15 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=52 ; osm:node/5081578456"
     },
     {
+     "fr": "Panorama",
+     "ar": "بانوراما",
+     "aliases": [
+      "Lot Panorama"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=37,52 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Polo",
      "ar": "بولو",
      "aliases": [],
@@ -321,6 +634,20 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,53 ; osm:node/12178947325"
+    },
+    {
+     "fr": "Riad Sofia",
+     "ar": "رياض صوفيا",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/5158476556"
+    },
+    {
+     "fr": "Riviera",
+     "ar": "ريفييرا",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=53 ; osm:node/12244916589"
     },
     {
      "fr": "Roches Noires",
@@ -382,8 +709,15 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=54 ; osm:node/2186532407 ; osm:relation/2801406 (arrondissement) ; ozon:Casablanca – Sidi Othmane"
     },
     {
+     "fr": "Sour Jdid",
+     "ar": "السور الجديد",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/12207065930"
+    },
+    {
      "fr": "Tacharouk",
-     "ar": "",
+     "ar": "التشارك",
      "aliases": [
       "Hay Ettacharouk",
       "Lot Attacharouk",
@@ -392,14 +726,14 @@
       "Attacharouks"
      ],
      "ozon": true,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,36,41,45 ; ozon:Tacharouk-casablanca ; barid:https://www.codepostal.ma/annuaire.pdf#page=41"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,36,41,45 ; ozon:Tacharouk-casablanca ; barid:https://www.codepostal.ma/annuaire.pdf#page=41 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Triangle d'Or",
-     "ar": "",
+     "ar": "المثلث الذهبي",
      "aliases": [],
      "ozon": false,
-     "src": "osm:node/13914810786 ; osm:relation/20825048 (arrondissement)"
+     "src": "osm:node/13914810786 ; osm:relation/20825048 (arrondissement) ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Val d'Anfa",
@@ -416,6 +750,13 @@
      "aliases": [],
      "ozon": false,
      "src": "osm:node/4685515491 ; osm:relation/19626752 (arrondissement)"
+    },
+    {
+     "fr": "Vermont",
+     "ar": "حي فيرمونت",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=55 ; osm:node/5062058869"
     }
    ],
    "all": [
@@ -493,12 +834,12 @@
     },
     {
      "fr": "Adil",
-     "ar": "",
+     "ar": "حي عادل",
      "aliases": [
       "Hay Adil"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,37"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,37 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Ahl Assalam",
@@ -537,10 +878,10 @@
     },
     {
      "fr": "Ain Borja",
-     "ar": "",
+     "ar": "عين البرجة",
      "aliases": [],
      "ozon": true,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=38 ; ozon:Casablanca – Ain Borja"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=38 ; ozon:Casablanca – Ain Borja ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Aïn Chock",
@@ -755,7 +1096,7 @@
     },
     {
      "fr": "Al Houria",
-     "ar": "",
+     "ar": "الحرية",
      "aliases": [
       "Hay El Hourria",
       "Hay Houria",
@@ -763,7 +1104,7 @@
       "Houria"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,39,44,47"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,39,44,47 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Al Idaa",
@@ -888,14 +1229,14 @@
     },
     {
      "fr": "Al Massira",
-     "ar": "",
+     "ar": "المسيرة",
      "aliases": [
       "Hay Al Massira",
       "Al Masira",
       "Massira"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,39,50"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,39,50 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Al Massira Khadra",
@@ -2444,6 +2785,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=30,43"
     },
     {
+     "fr": "Ch’houba",
+     "ar": "",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=43"
+    },
+    {
      "fr": "Chikass",
      "ar": "",
      "aliases": [],
@@ -2483,13 +2831,6 @@
     },
     {
      "fr": "Chtouki Abdelkader",
-     "ar": "",
-     "aliases": [],
-     "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=43"
-    },
-    {
-     "fr": "Ch’houba",
      "ar": "",
      "aliases": [],
      "ozon": false,
@@ -2766,15 +3107,6 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=30,43"
-    },
-    {
-     "fr": "Cretes",
-     "ar": "",
-     "aliases": [
-      "Hay Cretes"
-     ],
-     "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,43"
     },
     {
      "fr": "Cuba",
@@ -3122,10 +3454,12 @@
     },
     {
      "fr": "Derb El Kabir",
-     "ar": "",
-     "aliases": [],
+     "ar": "الدرب الكبير",
+     "aliases": [
+      "Derb Kabir"
+     ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=31"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=31 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Derb el Kheir",
@@ -4385,12 +4719,12 @@
     },
     {
      "fr": "Errahma",
-     "ar": "",
+     "ar": "حي الرحمة",
      "aliases": [
       "Hay Errahma"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,45"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,45 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Errakbout",
@@ -4588,10 +4922,10 @@
     },
     {
      "fr": "Florida",
-     "ar": "",
+     "ar": "فلوريدا",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Fonctionnaires",
@@ -4661,10 +4995,12 @@
     },
     {
      "fr": "Ghandi",
-     "ar": "",
-     "aliases": [],
+     "ar": "غاندي",
+     "aliases": [
+      "Gandhi"
+     ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=46 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Ghita",
@@ -5079,12 +5415,13 @@
     },
     {
      "fr": "Hay El Farah",
-     "ar": "",
+     "ar": "حي الفرح",
      "aliases": [
-      "El Farah"
+      "El Farah",
+      "Hay Farah"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,44 ; osm:node/4206033473"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,44 ; osm:node/4206033473 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay El Hana",
@@ -5349,6 +5686,16 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,51"
     },
     {
+     "fr": "Hay Moulay Abdellah",
+     "ar": "حي مولاي عبد الله",
+     "aliases": [
+      "Moulay Abdelleh",
+      "Hay My Abdellah"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,51 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Hay moulay laarbi alaoui",
      "ar": "",
      "aliases": [
@@ -5381,15 +5728,6 @@
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35"
-    },
-    {
-     "fr": "Hay My Abdellah",
-     "ar": "",
-     "aliases": [
-      "Moulay Abdelleh"
-     ],
-     "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,51"
     },
     {
      "fr": "Hay Najah",
@@ -5499,12 +5837,12 @@
     },
     {
      "fr": "Hay Salama",
-     "ar": "",
+     "ar": "حي السلامة",
      "aliases": [
       "Salama"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=36,54 ; osm:node/4211194805"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=36,54 ; osm:node/4211194805 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Sarazane",
@@ -5708,13 +6046,14 @@
     },
     {
      "fr": "Inara",
-     "ar": "",
+     "ar": "حي الإنارة",
      "aliases": [
       "Al Inara",
-      "Inarai"
+      "Inarai",
+      "Hay Inara"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=39,47"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=39,47 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Insaf",
@@ -6207,6 +6546,17 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=49"
     },
     {
+     "fr": "Lahraouiyine",
+     "ar": "الهراويين",
+     "aliases": [
+      "Lahraouyine",
+      "Lhraouiyine",
+      "Al Harraouiyine"
+     ],
+     "ozon": false,
+     "src": "manuel:2026-11-22 (quartier connu absent des sources)"
+    },
+    {
      "fr": "Laila",
      "ar": "",
      "aliases": [
@@ -6351,6 +6701,16 @@
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=49"
+    },
+    {
+     "fr": "Les Crêtes",
+     "ar": "لي كريت",
+     "aliases": [
+      "Hay Cretes",
+      "Cretes"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=34,43 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Les Faubourgs d'Anfa",
@@ -6506,15 +6866,6 @@
      "ar": "",
      "aliases": [
       "Ouled Taleb"
-     ],
-     "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=37,52"
-    },
-    {
-     "fr": "Lot Panorama",
-     "ar": "",
-     "aliases": [
-      "Panorama"
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=37,52"
@@ -6974,10 +7325,12 @@
     },
     {
      "fr": "Moulay Driss",
-     "ar": "",
-     "aliases": [],
+     "ar": "مولاي إدريس",
+     "aliases": [
+      "Mly Driss"
+     ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=51"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=51 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Moulay Rachid",
@@ -7038,6 +7391,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=51"
     },
     {
+     "fr": "M’quiliba",
+     "ar": "",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=51"
+    },
+    {
      "fr": "Mtaiba",
      "ar": "",
      "aliases": [],
@@ -7067,13 +7427,6 @@
     },
     {
      "fr": "Mzouga",
-     "ar": "",
-     "aliases": [],
-     "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=51"
-    },
-    {
-     "fr": "M’quiliba",
      "ar": "",
      "aliases": [],
      "ozon": false,
@@ -7144,10 +7497,10 @@
     },
     {
      "fr": "Nassim",
-     "ar": "",
+     "ar": "النسيم",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=52"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=52 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Nazik",
@@ -7371,6 +7724,15 @@
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=52"
+    },
+    {
+     "fr": "Panorama",
+     "ar": "بانوراما",
+     "aliases": [
+      "Lot Panorama"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=37,52 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Paranfa",
@@ -8079,7 +8441,7 @@
     },
     {
      "fr": "Tacharouk",
-     "ar": "",
+     "ar": "التشارك",
      "aliases": [
       "Hay Ettacharouk",
       "Lot Attacharouk",
@@ -8088,7 +8450,7 @@
       "Attacharouks"
      ],
      "ozon": true,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,36,41,45 ; ozon:Tacharouk-casablanca ; barid:https://www.codepostal.ma/annuaire.pdf#page=41"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=35,36,41,45 ; ozon:Tacharouk-casablanca ; barid:https://www.codepostal.ma/annuaire.pdf#page=41 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Tachfine",
@@ -8178,10 +8540,10 @@
     },
     {
      "fr": "Triangle d'Or",
-     "ar": "",
+     "ar": "المثلث الذهبي",
      "aliases": [],
      "ozon": false,
-     "src": "osm:node/13914810786 ; osm:relation/20825048 (arrondissement)"
+     "src": "osm:node/13914810786 ; osm:relation/20825048 (arrondissement) ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Tripolie",
@@ -8437,6 +8799,15 @@
      "src": "osm:relation/2799211 (arrondissement)"
     },
     {
+     "fr": "Akkari",
+     "ar": "العكاري",
+     "aliases": [
+      "Hay Akkari"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=149 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Akrach",
      "ar": "عكراش",
      "aliases": [],
@@ -8463,6 +8834,13 @@
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=150 ; osm:node/14295205708"
+    },
+    {
+     "fr": "Douar Hajja",
+     "ar": "دوار الحاجة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/2427311675 ; osm:node/14094959093"
     },
     {
      "fr": "El Menzeh",
@@ -8708,10 +9086,12 @@
     },
     {
      "fr": "Akkari",
-     "ar": "",
-     "aliases": [],
+     "ar": "العكاري",
+     "aliases": [
+      "Hay Akkari"
+     ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=149"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=149 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Akrach",
@@ -9816,12 +10196,12 @@
     },
     {
      "fr": "Hay El-Qods",
-     "ar": "",
+     "ar": "حي القدس",
      "aliases": [
       "Hay El Qods"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=158 ; osm:node/2922688737"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=158 ; osm:node/2922688737 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Errahma",
@@ -9890,6 +10270,13 @@
      "src": "osm:node/2186141292"
     },
     {
+     "fr": "Qaria",
+     "ar": "القرية",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/2186141349"
+    },
+    {
      "fr": "Rmel",
      "ar": "الرمل",
      "aliases": [],
@@ -9904,6 +10291,15 @@
      ],
      "ozon": false,
      "src": "osm:node/2186141201 ; barid:https://www.codepostal.ma/annuaire.pdf#page=162"
+    },
+    {
+     "fr": "Secteur Nahda Laayayda",
+     "ar": "قطاع النهضة لعيايدة",
+     "aliases": [
+      "Nahda Laayayda sector"
+     ],
+     "ozon": false,
+     "src": "osm:way/295731073"
     },
     {
      "fr": "Sidi Abdellah",
@@ -10678,12 +11074,12 @@
     },
     {
      "fr": "Hay El-Qods",
-     "ar": "",
+     "ar": "حي القدس",
      "aliases": [
       "Hay El Qods"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=158 ; osm:node/2922688737"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=158 ; osm:node/2922688737 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Ennahda",
@@ -11752,10 +12148,10 @@
     },
     {
      "fr": "El Menzeh",
-     "ar": "",
+     "ar": "المنزه",
      "aliases": [],
      "ozon": true,
-     "src": "ozon:El Menzeh - Temara"
+     "src": "ozon:El Menzeh - Temara ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Firdaous",
@@ -11776,6 +12172,15 @@
      "src": "osm:node/10089975543 ; osm:way/624413286"
     },
     {
+     "fr": "Harhoura",
+     "ar": "الهرهورة",
+     "aliases": [
+      "Lot Harhoura"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=174,176 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Hay Maghreb Arabi",
      "ar": "المغرب العربي",
      "aliases": [
@@ -11784,6 +12189,16 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=176 ; osm:node/2755123933 ; osm:relation/3616712 (arrondissement)"
+    },
+    {
+     "fr": "Hay Massira",
+     "ar": "حي المسيرة",
+     "aliases": [
+      "Lot Massira",
+      "Massira"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=174,176 ; osm:way/135780275 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Jasmin",
@@ -11828,6 +12243,16 @@
      "aliases": [],
      "ozon": false,
      "src": "osm:node/1872090821"
+    },
+    {
+     "fr": "Wifaq",
+     "ar": "الوفاق",
+     "aliases": [
+      "Lot Wifaq",
+      "Wifak"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=175,177 ; osm:node/14094959097"
     }
    ],
    "all": [
@@ -12059,10 +12484,10 @@
     },
     {
      "fr": "El Menzeh",
-     "ar": "",
+     "ar": "المنزه",
      "aliases": [],
      "ozon": true,
-     "src": "ozon:El Menzeh - Temara"
+     "src": "ozon:El Menzeh - Temara ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "El Mkitia",
@@ -12165,12 +12590,12 @@
     },
     {
      "fr": "Harhoura",
-     "ar": "",
+     "ar": "الهرهورة",
      "aliases": [
       "Lot Harhoura"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=174,176"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=174,176 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hatem",
@@ -12191,13 +12616,13 @@
     },
     {
      "fr": "Hay Massira",
-     "ar": "",
+     "ar": "حي المسيرة",
      "aliases": [
       "Lot Massira",
       "Massira"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=174,176 ; osm:way/135780275"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=174,176 ; osm:way/135780275 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hectares",
@@ -13432,6 +13857,16 @@
   "Mohammedia": {
    "main": [
     {
+     "fr": "Al Alia",
+     "ar": "العالية",
+     "aliases": [
+      "El Alia",
+      "Alia"
+     ],
+     "ozon": false,
+     "src": "manuel:2026-11-22 (quartier connu absent des sources)"
+    },
+    {
      "fr": "Chabab",
      "ar": "",
      "aliases": [],
@@ -13440,10 +13875,10 @@
     },
     {
      "fr": "Derb El Fath",
-     "ar": "",
+     "ar": "درب الفتح",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Derb Jamila",
@@ -13454,10 +13889,10 @@
     },
     {
      "fr": "Derb Marrakech",
-     "ar": "",
+     "ar": "درب مراكش",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Derb R’bat",
@@ -13475,24 +13910,24 @@
     },
     {
      "fr": "Hassania",
-     "ar": "",
+     "ar": "الحسنية",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay El Falah",
-     "ar": "",
+     "ar": "حي الفلاح",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay El Wahda",
-     "ar": "",
+     "ar": "حي الوحدة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Kasbah",
@@ -13529,16 +13964,26 @@
     },
     {
      "fr": "Rachidia",
-     "ar": "",
+     "ar": "الراشدية",
      "aliases": [
       "B Rachidia",
       "Bachidia"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138,139 ; barid:https://www.codepostal.ma/annuaire.pdf#page=138"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138,139 ; barid:https://www.codepostal.ma/annuaire.pdf#page=138 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     }
    ],
    "all": [
+    {
+     "fr": "Al Alia",
+     "ar": "العالية",
+     "aliases": [
+      "El Alia",
+      "Alia"
+     ],
+     "ozon": false,
+     "src": "manuel:2026-11-22 (quartier connu absent des sources)"
+    },
     {
      "fr": "Al Amal",
      "ar": "",
@@ -13666,10 +14111,10 @@
     },
     {
      "fr": "Derb El Fath",
-     "ar": "",
+     "ar": "درب الفتح",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Derb Errachidia",
@@ -13708,10 +14153,10 @@
     },
     {
      "fr": "Derb Marrakech",
-     "ar": "",
+     "ar": "درب مراكش",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Derb Mascato",
@@ -13728,14 +14173,14 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
     },
     {
-     "fr": "Derb Riad",
+     "fr": "Derb R’bat",
      "ar": "",
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
     },
     {
-     "fr": "Derb R’bat",
+     "fr": "Derb Riad",
      "ar": "",
      "aliases": [],
      "ozon": false,
@@ -14009,17 +14454,17 @@
     },
     {
      "fr": "Hassania",
-     "ar": "",
+     "ar": "الحسنية",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay El Falah",
-     "ar": "",
+     "ar": "حي الفلاح",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay El Farah",
@@ -14032,10 +14477,10 @@
     },
     {
      "fr": "Hay El Wahda",
-     "ar": "",
+     "ar": "حي الوحدة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=136 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Ennasr",
@@ -14108,6 +14553,16 @@
      "fr": "Lakrames",
      "ar": "",
      "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138"
+    },
+    {
+     "fr": "L’Habitat",
+     "ar": "",
+     "aliases": [
+      "L Habitat",
+      "Labitat"
+     ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138"
     },
@@ -14420,16 +14875,6 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=137,139 ; osm:node/4166709149"
     },
     {
-     "fr": "L’Habitat",
-     "ar": "",
-     "aliases": [
-      "L Habitat",
-      "Labitat"
-     ],
-     "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138"
-    },
-    {
      "fr": "Manismane",
      "ar": "",
      "aliases": [],
@@ -14547,13 +14992,13 @@
     },
     {
      "fr": "Rachidia",
-     "ar": "",
+     "ar": "الراشدية",
      "aliases": [
       "B Rachidia",
       "Bachidia"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138,139 ; barid:https://www.codepostal.ma/annuaire.pdf#page=138"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=138,139 ; barid:https://www.codepostal.ma/annuaire.pdf#page=138 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Residence 3 Mars",
@@ -14744,6 +15189,13 @@
   "Marrakech": {
    "main": [
     {
+     "fr": "Agdal",
+     "ar": "أكدال",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=104 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Al Izdihar",
      "ar": "الإزدهار",
      "aliases": [
@@ -14765,6 +15217,15 @@
      "aliases": [],
      "ozon": false,
      "src": "osm:node/2164767801 ; osm:relation/2799527 (arrondissement)"
+    },
+    {
+     "fr": "Assif",
+     "ar": "اسيف",
+     "aliases": [
+      "Lot Assif"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=101 ; osm:node/7264948884"
     },
     {
      "fr": "Azli",
@@ -14795,6 +15256,17 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=105 ; osm:node/595960402 ; ar:osm:way/126153361"
     },
     {
+     "fr": "Belbekkar",
+     "ar": "بلبكار",
+     "aliases": [
+      "Lot Bel Bekkar",
+      "Bel Bakkar",
+      "Belbekar"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=101,106 ; osm:node/7264896101"
+    },
+    {
      "fr": "Bin Laqchali",
      "ar": "بين القشالي",
      "aliases": [
@@ -14816,6 +15288,13 @@
      "aliases": [],
      "ozon": false,
      "src": "osm:node/6002434152"
+    },
+    {
+     "fr": "Douar Iziki",
+     "ar": "دوار إزيكي",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/7264896097"
     },
     {
      "fr": "El Hara",
@@ -14847,12 +15326,19 @@
     },
     {
      "fr": "Hay Hassani",
-     "ar": "",
+     "ar": "الحي الحسني",
      "aliases": [
       "Hay El Hassani"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=101 ; osm:node/2255736185"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=101 ; osm:node/2255736185 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Hay Zitoun",
+     "ar": "حي الزيتون",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/7264948881"
     },
     {
      "fr": "Inara",
@@ -14893,6 +15379,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=112,114 ; osm:node/7264948882"
     },
     {
+     "fr": "Lalla Hiya",
+     "ar": "لالة حية",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/7264875245"
+    },
+    {
      "fr": "M'hamid",
      "ar": "محاميد",
      "aliases": [
@@ -14902,11 +15395,28 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=115 ; osm:node/2206191207"
     },
     {
+     "fr": "Majorelle",
+     "ar": "ماجوريل",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=114 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Marrakech-Medina",
      "ar": "مراكش المدينة",
      "aliases": [],
      "ozon": false,
      "src": "osm:relation/2799534 (arrondissement)"
+    },
+    {
+     "fr": "Masmoudi",
+     "ar": "المصمودي",
+     "aliases": [
+      "Lot Masmoudi",
+      "Lotissement Masmoudi"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=102 ; osm:node/4258612948"
     },
     {
      "fr": "Massira",
@@ -14916,6 +15426,13 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=115 ; osm:node/3942697014 ; osm:node/2255736116 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/عمالة_مراكش (annexe « ملحقة المسيرة »)"
+    },
+    {
+     "fr": "Mechouar Kasbah",
+     "ar": "المشور القصبة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/660578075"
     },
     {
      "fr": "Medina",
@@ -14960,6 +15477,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=111,117 ; osm:node/4262364214"
     },
     {
+     "fr": "Semlalia",
+     "ar": "السملالية",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=117 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Sidi Abbad",
      "ar": "سيدي عباد",
      "aliases": [],
@@ -14982,6 +15506,13 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=117,118 ; osm:node/4251945873"
+    },
+    {
+     "fr": "Taqaddoum",
+     "ar": "حي التقدم",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/7264896100"
     },
     {
      "fr": "Targa",
@@ -15105,10 +15636,10 @@
     },
     {
      "fr": "Agdal",
-     "ar": "",
+     "ar": "أكدال",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=104"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=104 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Agdal Bahmad",
@@ -18165,12 +18696,12 @@
     },
     {
      "fr": "Hay Hassani",
-     "ar": "",
+     "ar": "الحي الحسني",
      "aliases": [
       "Hay El Hassani"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=101 ; osm:node/2255736185"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=101 ; osm:node/2255736185 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Mohamadi",
@@ -19303,10 +19834,10 @@
     },
     {
      "fr": "Majorelle",
-     "ar": "",
+     "ar": "ماجوريل",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=114"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=114 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Makhbaza",
@@ -20238,10 +20769,10 @@
     },
     {
      "fr": "Semlalia",
-     "ar": "",
+     "ar": "السملالية",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=117"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=117 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Senhaja",
@@ -21158,6 +21689,15 @@
      "src": "osm:node/2184888171 ; osm:relation/2799558 (arrondissement)"
     },
     {
+     "fr": "Ain Kadous",
+     "ar": "عين قادوس",
+     "aliases": [
+      "Secteur Ain Kadous"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=71,82 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Al-Adarissa",
      "ar": "حي الأدارسة",
      "aliases": [
@@ -21176,12 +21716,12 @@
     },
     {
      "fr": "Bensouda",
-     "ar": "",
+     "ar": "بنسودة",
      "aliases": [
       "Ben Souda"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=73 ; osm:node/8538789356"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=73 ; osm:node/8538789356 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Bouremmana",
@@ -21193,6 +21733,13 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=69,74 ; osm:node/8539508652"
+    },
+    {
+     "fr": "Dar Dbibagh",
+     "ar": "دار دبيغ",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/4978244986"
     },
     {
      "fr": "El Mariniyine",
@@ -21241,6 +21788,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=70 ; osm:node/8555542935"
     },
     {
+     "fr": "Hay Nour",
+     "ar": "حي النور",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/5137227765"
+    },
+    {
      "fr": "Hay Oued fes",
      "ar": "واد فاس",
      "aliases": [
@@ -21248,6 +21802,27 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=79 ; osm:node/8520737714 ; ar:osm:way/395677116 (oued Fès, qui donne son nom au quartier)"
+    },
+    {
+     "fr": "Hay Riad",
+     "ar": "حي الرياض",
+     "aliases": [
+      "Lot Riyad",
+      "Hay Riyad"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=70 ; osm:node/5137222851"
+    },
+    {
+     "fr": "Hay Tarik",
+     "ar": "حي طارق",
+     "aliases": [
+      "Tarik",
+      "Hay Tarik 2",
+      "Tarik 2"
+     ],
+     "ozon": false,
+     "src": "osm:node/4836132016 ; osm:node/4847550043 ; osm:node/4851078344"
     },
     {
      "fr": "Hay Zaza",
@@ -21274,10 +21849,20 @@
     },
     {
      "fr": "Mont Fleuri",
-     "ar": "",
+     "ar": "مونفلوري",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=79 ; osm:node/863968106"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=79 ; osm:node/863968106 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Narjiss",
+     "ar": "النرجس",
+     "aliases": [
+      "Hay Narjiss",
+      "Narjis"
+     ],
+     "ozon": false,
+     "src": "manuel:2026-11-22 (quartier connu absent des sources)"
     },
     {
      "fr": "Saiss",
@@ -21302,10 +21887,19 @@
     },
     {
      "fr": "Sidi Brahim",
-     "ar": "",
+     "ar": "سيدي إبراهيم",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=81 ; osm:node/4978237289"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=81 ; osm:node/4978237289 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Zohour",
+     "ar": "الزهور",
+     "aliases": [
+      "Zouhour"
+     ],
+     "ozon": false,
+     "src": "osm:node/5224749804 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Zouagha",
@@ -21448,12 +22042,12 @@
     },
     {
      "fr": "Ain Kadous",
-     "ar": "",
+     "ar": "عين قادوس",
      "aliases": [
       "Secteur Ain Kadous"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=71,82"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=71,82 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Ain Laaroussi",
@@ -22043,12 +22637,12 @@
     },
     {
      "fr": "Bensouda",
-     "ar": "",
+     "ar": "بنسودة",
      "aliases": [
       "Ben Souda"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=73 ; osm:node/8538789356"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=73 ; osm:node/8538789356 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Benzakour",
@@ -24567,10 +25161,10 @@
     },
     {
      "fr": "Mont Fleuri",
-     "ar": "",
+     "ar": "مونفلوري",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=79 ; osm:node/863968106"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=79 ; osm:node/863968106 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Moulay Abdellah",
@@ -24685,6 +25279,16 @@
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=79"
+    },
+    {
+     "fr": "Narjiss",
+     "ar": "النرجس",
+     "aliases": [
+      "Hay Narjiss",
+      "Narjis"
+     ],
+     "ozon": false,
+     "src": "manuel:2026-11-22 (quartier connu absent des sources)"
     },
     {
      "fr": "Nasr",
@@ -25337,10 +25941,10 @@
     },
     {
      "fr": "Sidi Brahim",
-     "ar": "",
+     "ar": "سيدي إبراهيم",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=81 ; osm:node/4978237289"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=81 ; osm:node/4978237289 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Sidi Dir",
@@ -25793,10 +26397,12 @@
     },
     {
      "fr": "Zohour",
-     "ar": "",
-     "aliases": [],
+     "ar": "الزهور",
+     "aliases": [
+      "Zouhour"
+     ],
      "ozon": false,
-     "src": "osm:node/5224749804"
+     "src": "osm:node/5224749804 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Zohra",
@@ -25869,10 +26475,10 @@
     },
     {
      "fr": "Ancienne Medina",
-     "ar": "",
+     "ar": "المدينة القديمة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=124"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=124 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Bel Air",
@@ -25908,12 +26514,12 @@
     },
     {
      "fr": "Diour Salam",
-     "ar": "",
+     "ar": "ديور السلام",
      "aliases": [
       "Diour Essalam"
      ],
      "ozon": false,
-     "src": "osm:node/3142523664 ; barid:https://www.codepostal.ma/annuaire.pdf#page=121"
+     "src": "osm:node/3142523664 ; barid:https://www.codepostal.ma/annuaire.pdf#page=121 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "El Bassatine",
@@ -25938,10 +26544,10 @@
     },
     {
      "fr": "El Manar",
-     "ar": "",
+     "ar": "المنار",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=127"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=127 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "El Mansour",
@@ -25991,12 +26597,12 @@
     },
     {
      "fr": "Ibn Sina",
-     "ar": "",
+     "ar": "ابن سينا",
      "aliases": [
       "Ibn Sena"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=129"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=129 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "L’Hacienda",
@@ -26105,6 +26711,20 @@
     {
      "fr": "Touarga",
      "ar": "تواركة",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=135 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/مكناس"
+    },
+    {
+     "fr": "Toulal",
+     "ar": "تولال",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=135 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/مكناس"
+    },
+    {
+     "fr": "Wislane",
+     "ar": "ويسلان",
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=135 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/مكناس"
@@ -26492,10 +27112,10 @@
     },
     {
      "fr": "Ancienne Medina",
-     "ar": "",
+     "ar": "المدينة القديمة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=124"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=124 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Anciens Combatants",
@@ -27277,12 +27897,12 @@
     },
     {
      "fr": "Diour Salam",
-     "ar": "",
+     "ar": "ديور السلام",
      "aliases": [
       "Diour Essalam"
      ],
      "ozon": false,
-     "src": "osm:node/3142523664 ; barid:https://www.codepostal.ma/annuaire.pdf#page=121"
+     "src": "osm:node/3142523664 ; barid:https://www.codepostal.ma/annuaire.pdf#page=121 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Djaiji",
@@ -27724,10 +28344,10 @@
     },
     {
      "fr": "El Manar",
-     "ar": "",
+     "ar": "المنار",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=127"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=127 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "El Mansour",
@@ -28530,12 +29150,12 @@
     },
     {
      "fr": "Ibn Sina",
-     "ar": "",
+     "ar": "ابن سينا",
      "aliases": [
       "Ibn Sena"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=129"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=129 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Ibn Zaidan",
@@ -29126,6 +29746,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=131"
     },
     {
+     "fr": "L’Hacienda",
+     "ar": "",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=131"
+    },
+    {
      "fr": "Lhlha Lkzadira",
      "ar": "",
      "aliases": [],
@@ -29154,13 +29781,6 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=133 ; osm:node/5625783246"
-    },
-    {
-     "fr": "L’Hacienda",
-     "ar": "",
-     "aliases": [],
-     "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=131"
     },
     {
      "fr": "Maadadi",
@@ -30626,6 +31246,15 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166 ; osm:node/2156103013 ; osm:relation/3544587 (arrondissement)"
     },
     {
+     "fr": "Boubana",
+     "ar": "بوبانة",
+     "aliases": [
+      "Golf Boubana"
+     ],
+     "ozon": false,
+     "src": "manuel:2026-11-22 (quartier connu absent des sources)"
+    },
+    {
      "fr": "Boukhalef",
      "ar": "بوخالف",
      "aliases": [],
@@ -30634,17 +31263,26 @@
     },
     {
      "fr": "Branesse",
-     "ar": "",
+     "ar": "برانص",
+     "aliases": [
+      "Branes"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Casabarata",
+     "ar": "كاساباراطا",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166"
+     "src": "osm:node/4693394475"
     },
     {
      "fr": "Castilla",
-     "ar": "",
+     "ar": "كاستيا",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Centre Ville",
@@ -30675,6 +31313,20 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=164 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/طنجة (quartiers de la médina : « القصبة، دار البارود، جنان قبطان، واد أهردان »)"
     },
     {
+     "fr": "Dhaha Baraka",
+     "ar": "ضحى البركة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/4793814625"
+    },
+    {
+     "fr": "Dhar Alkanfoud",
+     "ar": "ضهر القنفوذ",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/4793814226"
+    },
+    {
      "fr": "Dradeb",
      "ar": "درادب",
      "aliases": [],
@@ -30696,6 +31348,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=167 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/طنجة"
     },
     {
+     "fr": "Hay el Haddad",
+     "ar": "حي الحداد",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/4997519893"
+    },
+    {
      "fr": "Hay Jadid",
      "ar": "",
      "aliases": [],
@@ -30708,6 +31367,13 @@
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=167"
+    },
+    {
+     "fr": "Iberia",
+     "ar": "إيبريا",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/4993129394"
     },
     {
      "fr": "Jamaa Moukraa",
@@ -30770,6 +31436,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=168 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/طنجة"
     },
     {
+     "fr": "Malabata",
+     "ar": "ملاباطا",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=168 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Marchan",
      "ar": "مرشان",
      "aliases": [
@@ -30810,6 +31483,20 @@
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=168 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/طنجة"
+    },
+    {
+     "fr": "Oued Aherdan",
+     "ar": "واد أهردان",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/2377506752 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/طنجة"
+    },
+    {
+     "fr": "Sania",
+     "ar": "سانية",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=168 ; osm:node/4999723123"
     },
     {
      "fr": "Siaghine",
@@ -31225,6 +31912,15 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166"
     },
     {
+     "fr": "Boubana",
+     "ar": "بوبانة",
+     "aliases": [
+      "Golf Boubana"
+     ],
+     "ozon": false,
+     "src": "manuel:2026-11-22 (quartier connu absent des sources)"
+    },
+    {
      "fr": "Bouchetta",
      "ar": "",
      "aliases": [],
@@ -31296,10 +31992,12 @@
     },
     {
      "fr": "Branesse",
-     "ar": "",
-     "aliases": [],
+     "ar": "برانص",
+     "aliases": [
+      "Branes"
+     ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "California",
@@ -31317,10 +32015,10 @@
     },
     {
      "fr": "Castilla",
-     "ar": "",
+     "ar": "كاستيا",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=166 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Centre Ville",
@@ -32259,10 +32957,10 @@
     },
     {
      "fr": "Malabata",
-     "ar": "",
+     "ar": "ملاباطا",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=168"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=168 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Mara",
@@ -32726,12 +33424,12 @@
    "main": [
     {
      "fr": "Barrio Malaga",
-     "ar": "",
+     "ar": "باريو مالقا",
      "aliases": [
       "Bario Malaga"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=180"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=180 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Bouanan",
@@ -32791,10 +33489,10 @@
     },
     {
      "fr": "Inara",
-     "ar": "",
+     "ar": "الإنارة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=181"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=181 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Jbel Dersa",
@@ -32837,19 +33535,19 @@
     },
     {
      "fr": "Saniat Rmel",
-     "ar": "",
+     "ar": "سانية الرمل",
      "aliases": [
       "Hay Sania Rmel"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=182,183 ; osm:node/4636374692"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=182,183 ; osm:node/4636374692 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Sidi Talha",
-     "ar": "",
+     "ar": "سيدي طلحة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=183"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=183 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Taboula",
@@ -32864,6 +33562,13 @@
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=183"
+    },
+    {
+     "fr": "Tamouda",
+     "ar": "تمودة",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=183 ; ar:wikidata:Q7681888"
     },
     {
      "fr": "Touabel",
@@ -33111,12 +33816,12 @@
     },
     {
      "fr": "Barrio Malaga",
-     "ar": "",
+     "ar": "باريو مالقا",
      "aliases": [
       "Bario Malaga"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=180"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=180 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Bel Oualid",
@@ -33807,10 +34512,10 @@
     },
     {
      "fr": "Inara",
-     "ar": "",
+     "ar": "الإنارة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=181"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=181 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Intissar",
@@ -34311,12 +35016,12 @@
     },
     {
      "fr": "Saniat Rmel",
-     "ar": "",
+     "ar": "سانية الرمل",
      "aliases": [
       "Hay Sania Rmel"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=182,183 ; osm:node/4636374692"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=182,183 ; osm:node/4636374692 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Seffar Jenoui",
@@ -34362,10 +35067,10 @@
     },
     {
      "fr": "Sidi Talha",
-     "ar": "",
+     "ar": "سيدي طلحة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=183"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=183 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Skireje",
@@ -34652,6 +35357,13 @@
      "src": "osm:node/1057816237"
     },
     {
+     "fr": "Assaka",
+     "ar": "اساكا",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/3918754488"
+    },
+    {
      "fr": "Battoire",
      "ar": "باطوار",
      "aliases": [],
@@ -34671,6 +35383,13 @@
      "aliases": [],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=17 ; osm:node/1054653317"
+    },
+    {
+     "fr": "Cité Suisse",
+     "ar": "سيتي سويس",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=15 ; osm:node/1056895875"
     },
     {
      "fr": "Dakhla",
@@ -34732,6 +35451,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=17 ; osm:node/3846577657"
     },
     {
+     "fr": "Hay Hassani",
+     "ar": "الحي الحسني",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=15 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
      "fr": "Hay Mohammedi",
      "ar": "الحي المحمدي",
      "aliases": [
@@ -34768,6 +35494,13 @@
      "aliases": [],
      "ozon": false,
      "src": "osm:node/1054483322"
+    },
+    {
+     "fr": "Lirak",
+     "ar": "ليراك",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/4577761874"
     },
     {
      "fr": "Marina d'Agadir",
@@ -35411,10 +36144,10 @@
     },
     {
      "fr": "Hay Hassani",
-     "ar": "",
+     "ar": "الحي الحسني",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=15"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=15 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Mohammedi",
@@ -35932,6 +36665,16 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/3749413180 ; osm:node/4429357422"
     },
     {
+     "fr": "Hay Al Mahatta",
+     "ar": "حي المحطة",
+     "aliases": [
+      "Hay Sidi Ziane",
+      "Al Mahatta"
+     ],
+     "ozon": false,
+     "src": "osm:node/2964431773"
+    },
+    {
      "fr": "Hay Al Maksam",
      "ar": "",
      "aliases": [
@@ -35943,12 +36686,12 @@
     },
     {
      "fr": "Hay Al Massira",
-     "ar": "",
+     "ar": "حي المسيرة",
      "aliases": [
       "El Massira"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=144 ; osm:node/2970375975"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=144 ; osm:node/2970375975 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Al Miloud",
@@ -35982,12 +36725,12 @@
     },
     {
      "fr": "Hay Al Wahda",
-     "ar": "",
+     "ar": "حي الوحدة",
      "aliases": [
       "El Wahda"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=144 ; osm:node/2964490282"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=144 ; osm:node/2964490282 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Angad",
@@ -36014,12 +36757,12 @@
     },
     {
      "fr": "Hay Bassatine",
-     "ar": "",
+     "ar": "حي البساتين",
      "aliases": [
       "Hay El Bassatine"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2969554898"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2969554898 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Ben Azzi",
@@ -36036,6 +36779,22 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964490281"
+    },
+    {
+     "fr": "Hay Debbane",
+     "ar": "حي الدبان",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/3942519337"
+    },
+    {
+     "fr": "Hay El Manar",
+     "ar": "حي المنار",
+     "aliases": [
+      "Lot Manar"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=142 ; osm:node/2965297523 ; osm:node/3240488118"
     },
     {
      "fr": "Hay Essalam",
@@ -36072,17 +36831,17 @@
     },
     {
      "fr": "Hay Ibn Khaldoun",
-     "ar": "",
+     "ar": "حي ابن خلدون",
      "aliases": [],
      "ozon": false,
-     "src": "osm:node/2964495880"
+     "src": "osm:node/2964495880 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Jawhara",
-     "ar": "",
+     "ar": "حي الجوهرة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964490284"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964490284 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Jdid",
@@ -36124,6 +36883,15 @@
      "src": "osm:node/2964431772 ; ar:ar.wikipedia:https://ar.wikipedia.org/wiki/وجدة"
     },
     {
+     "fr": "Hay Mohammedi",
+     "ar": "الحي المحمدي",
+     "aliases": [
+      "El Mohamadi"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=144 ; osm:node/2968976716"
+    },
+    {
      "fr": "Hay Moulay Mustapha",
      "ar": "",
      "aliases": [
@@ -36150,10 +36918,17 @@
     },
     {
      "fr": "Hay Nour",
-     "ar": "",
+     "ar": "حي النور",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964490283"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964490283 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Hay Omar Al Boulissi",
+     "ar": "حي عمر البوليسي",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/2964777928"
     },
     {
      "fr": "Hay Oued Nachef",
@@ -36172,6 +36947,13 @@
      "src": "osm:node/2964529812"
     },
     {
+     "fr": "Hay Sidi Driss",
+     "ar": "حي سيدي إدريس",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/3944949048"
+    },
+    {
      "fr": "Hay Sidi Maafa",
      "ar": "",
      "aliases": [
@@ -36179,6 +36961,13 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141,146 ; osm:node/2970877992"
+    },
+    {
+     "fr": "Hay Slimani",
+     "ar": "حي السليماني",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964777927"
     },
     {
      "fr": "Hay Takkadoum",
@@ -36191,10 +36980,49 @@
     },
     {
      "fr": "Hay Zouhour",
-     "ar": "",
+     "ar": "حي الزهور",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141,142 ; osm:node/2965225149"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141,142 ; osm:node/2965225149 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Lotissement Al Kawtar",
+     "ar": "تجزئة الكوثر",
+     "aliases": [
+      "Al Kawtar"
+     ],
+     "ozon": false,
+     "src": "osm:node/3942537665"
+    },
+    {
+     "fr": "Lotissement Kada Houcine",
+     "ar": "تجزئة قادة حسين",
+     "aliases": [
+      "Lot Kada Houssine",
+      "Lotissement Kada Houssine",
+      "Kada Houssine"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=142 ; osm:node/2965251854 ; osm:node/3258704123 ; osm:node/3944945673"
+    },
+    {
+     "fr": "Lotissement Liateni",
+     "ar": "تجزئة الياتني",
+     "aliases": [
+      "Liateni"
+     ],
+     "ozon": false,
+     "src": "osm:node/3949116081"
+    },
+    {
+     "fr": "Lotissement Soltani",
+     "ar": "تجزئة السلطاني",
+     "aliases": [
+      "Lot Soultani",
+      "Soltani"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=142 ; osm:node/3949119133"
     },
     {
      "fr": "Quartier Des Emirates",
@@ -37063,12 +37891,12 @@
     },
     {
      "fr": "Hay Al Massira",
-     "ar": "",
+     "ar": "حي المسيرة",
      "aliases": [
       "El Massira"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=144 ; osm:node/2970375975"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=144 ; osm:node/2970375975 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Al Miloud",
@@ -37102,12 +37930,12 @@
     },
     {
      "fr": "Hay Al Wahda",
-     "ar": "",
+     "ar": "حي الوحدة",
      "aliases": [
       "El Wahda"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=144 ; osm:node/2964490282"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=144 ; osm:node/2964490282 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Angad",
@@ -37157,12 +37985,12 @@
     },
     {
      "fr": "Hay Bassatine",
-     "ar": "",
+     "ar": "حي البساتين",
      "aliases": [
       "Hay El Bassatine"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2969554898"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2969554898 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Ben Azzi",
@@ -37376,17 +38204,17 @@
     },
     {
      "fr": "Hay Ibn Khaldoun",
-     "ar": "",
+     "ar": "حي ابن خلدون",
      "aliases": [],
      "ozon": false,
-     "src": "osm:node/2964495880"
+     "src": "osm:node/2964495880 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Jawhara",
-     "ar": "",
+     "ar": "حي الجوهرة",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964490284"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964490284 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Jdid",
@@ -37539,10 +38367,10 @@
     },
     {
      "fr": "Hay Nour",
-     "ar": "",
+     "ar": "حي النور",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964490283"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141 ; osm:node/2964490283 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Omar Al Boulissi",
@@ -37726,10 +38554,10 @@
     },
     {
      "fr": "Hay Zouhour",
-     "ar": "",
+     "ar": "حي الزهور",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141,142 ; osm:node/2965225149"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=141,142 ; osm:node/2965225149 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hellou",
@@ -38923,7 +39751,7 @@
     },
     {
      "fr": "Al Ismailia",
-     "ar": "",
+     "ar": "الإسماعيلية",
      "aliases": [
       "Ismailia",
       "Esmailia",
@@ -38931,7 +39759,7 @@
       "Ismailaa"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87,88 ; osm:node/4535723912"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87,88 ; osm:node/4535723912 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Assaknia",
@@ -38989,19 +39817,19 @@
     },
     {
      "fr": "El Mellah",
-     "ar": "",
+     "ar": "الملاح",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=87 ; osm:node/4675269813"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=87 ; osm:node/4675269813 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "El Menzeh",
-     "ar": "",
+     "ar": "المنزه",
      "aliases": [
       "Hay El Menzeh"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Fouarat",
@@ -39031,13 +39859,13 @@
     },
     {
      "fr": "Hay Al Amal",
-     "ar": "",
+     "ar": "حي الأمل",
      "aliases": [
       "Hay El Amal",
       "Amal"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; osm:node/10027658832 ; osm:node/10032595957"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; osm:node/10027658832 ; osm:node/10032595957 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Al Baladiya",
@@ -39048,55 +39876,55 @@
     },
     {
      "fr": "Hay Al Bassatine",
-     "ar": "",
+     "ar": "حي البساتين",
      "aliases": [
       "Hay Al Basatine"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027558789"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027558789 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Al Inara",
-     "ar": "",
+     "ar": "حي الإنارة",
      "aliases": [
       "Al Inara",
       "El Inara",
       "Inara"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; osm:node/10027658836"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; osm:node/10027658836 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Al Ouahda",
-     "ar": "",
+     "ar": "حي الوحدة",
      "aliases": [],
      "ozon": false,
-     "src": "osm:node/10027658834"
+     "src": "osm:node/10027658834 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay El Wafaa",
-     "ar": "",
+     "ar": "حي الوفاء",
      "aliases": [
       "Hay Al Wafaa",
       "Wafa",
       "Wafae"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,88,89 ; osm:node/10032595956"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,88,89 ; osm:node/10032595956 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Essalam",
-     "ar": "",
+     "ar": "حي السلام",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027658835"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027658835 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Lalla Meryem",
-     "ar": "",
+     "ar": "حي لالة مريم",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027658837"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027658837 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Maamora",
@@ -39109,12 +39937,12 @@
     },
     {
      "fr": "Hay Nahda",
-     "ar": "",
+     "ar": "حي النهضة",
      "aliases": [
       "Nahda"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=88 ; osm:node/10027658833"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=88 ; osm:node/10027658833 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Ourida",
@@ -39132,10 +39960,10 @@
     },
     {
      "fr": "Hay Safaa",
-     "ar": "",
+     "ar": "حي الصفاء",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027558791"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027558791 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Irchad",
@@ -39189,12 +40017,12 @@
     },
     {
      "fr": "Maghreb Al Arabi",
-     "ar": "",
+     "ar": "المغرب العربي",
      "aliases": [
       "Maghrib Arabi"
      ],
      "ozon": false,
-     "src": "osm:node/4535632010 ; barid:https://www.codepostal.ma/annuaire.pdf#page=88"
+     "src": "osm:node/4535632010 ; barid:https://www.codepostal.ma/annuaire.pdf#page=88 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Mimosa",
@@ -39327,7 +40155,7 @@
     },
     {
      "fr": "Al Ismailia",
-     "ar": "",
+     "ar": "الإسماعيلية",
      "aliases": [
       "Ismailia",
       "Esmailia",
@@ -39335,7 +40163,7 @@
       "Ismailaa"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87,88 ; osm:node/4535723912"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87,88 ; osm:node/4535723912 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Alger",
@@ -39621,19 +40449,19 @@
     },
     {
      "fr": "El Mellah",
-     "ar": "",
+     "ar": "الملاح",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=87 ; osm:node/4675269813"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=87 ; osm:node/4675269813 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "El Menzeh",
-     "ar": "",
+     "ar": "المنزه",
      "aliases": [
       "Hay El Menzeh"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "El Oulfa",
@@ -39719,13 +40547,13 @@
     },
     {
      "fr": "Hay Al Amal",
-     "ar": "",
+     "ar": "حي الأمل",
      "aliases": [
       "Hay El Amal",
       "Amal"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; osm:node/10027658832 ; osm:node/10032595957"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; osm:node/10027658832 ; osm:node/10032595957 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Al Baladiya",
@@ -39736,23 +40564,23 @@
     },
     {
      "fr": "Hay Al Bassatine",
-     "ar": "",
+     "ar": "حي البساتين",
      "aliases": [
       "Hay Al Basatine"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027558789"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027558789 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Al Inara",
-     "ar": "",
+     "ar": "حي الإنارة",
      "aliases": [
       "Al Inara",
       "El Inara",
       "Inara"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; osm:node/10027658836"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,87 ; osm:node/10027658836 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Al Minaa",
@@ -39763,10 +40591,10 @@
     },
     {
      "fr": "Hay Al Ouahda",
-     "ar": "",
+     "ar": "حي الوحدة",
      "aliases": [],
      "ozon": false,
-     "src": "osm:node/10027658834"
+     "src": "osm:node/10027658834 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay El Idari",
@@ -39784,14 +40612,14 @@
     },
     {
      "fr": "Hay El Wafaa",
-     "ar": "",
+     "ar": "حي الوفاء",
      "aliases": [
       "Hay Al Wafaa",
       "Wafa",
       "Wafae"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,88,89 ; osm:node/10032595956"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86,88,89 ; osm:node/10032595956 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay El Wahda",
@@ -39802,17 +40630,17 @@
     },
     {
      "fr": "Hay Essalam",
-     "ar": "",
+     "ar": "حي السلام",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027658835"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027658835 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Lalla Meryem",
-     "ar": "",
+     "ar": "حي لالة مريم",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027658837"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027658837 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Maamora",
@@ -39825,12 +40653,12 @@
     },
     {
      "fr": "Hay Nahda",
-     "ar": "",
+     "ar": "حي النهضة",
      "aliases": [
       "Nahda"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=88 ; osm:node/10027658833"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=88 ; osm:node/10027658833 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Nasma",
@@ -39883,10 +40711,10 @@
     },
     {
      "fr": "Hay Safaa",
-     "ar": "",
+     "ar": "حي الصفاء",
      "aliases": [],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027558791"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=86 ; osm:node/10027558791 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Salam",
@@ -40091,12 +40919,12 @@
     },
     {
      "fr": "Maghreb Al Arabi",
-     "ar": "",
+     "ar": "المغرب العربي",
      "aliases": [
       "Maghrib Arabi"
      ],
      "ozon": false,
-     "src": "osm:node/4535632010 ; barid:https://www.codepostal.ma/annuaire.pdf#page=88"
+     "src": "osm:node/4535632010 ; barid:https://www.codepostal.ma/annuaire.pdf#page=88 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Manar",
@@ -40247,13 +41075,44 @@
   "El Jadida": {
    "main": [
     {
+     "fr": "Al Ghazwa",
+     "ar": "الغزوة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11636079351"
+    },
+    {
+     "fr": "Al Qods",
+     "ar": "حي القدس",
+     "aliases": [
+      "Cite El Quods",
+      "Hay Al Qods"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=58 ; osm:node/11997846448 ; osm:node/12020109250 ; osm:node/12121337571"
+    },
+    {
+     "fr": "Carpozen",
+     "ar": "كاربوزين",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11637679994"
+    },
+    {
      "fr": "Centre-Ville",
-     "ar": "",
+     "ar": "وسط المدينة",
      "aliases": [
       "Centre Ville"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=58 ; osm:node/13990681210"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=58 ; osm:node/13990681210 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Cité Portugaise",
+     "ar": "الحي البرتغالي",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11812383595"
     },
     {
      "fr": "Derb Ben Driss",
@@ -40298,6 +41157,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=59 ; osm:node/11637935048"
     },
     {
+     "fr": "Derb Lahouna",
+     "ar": "درب لاحونة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11637548112"
+    },
+    {
      "fr": "Derb Ouadoudi Haboul",
      "ar": "",
      "aliases": [],
@@ -40305,13 +41171,36 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=59 ; osm:node/12142282639"
     },
     {
+     "fr": "Diyar Cheikh",
+     "ar": "ديار الشيخ",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11637528537"
+    },
+    {
+     "fr": "Douar Chaïbat",
+     "ar": "الشعيبات",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11637528515"
+    },
+    {
+     "fr": "El Manar",
+     "ar": "حي المنار",
+     "aliases": [
+      "Lot Al Manar"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=61 ; osm:node/12006308882"
+    },
+    {
      "fr": "El Yacout",
-     "ar": "",
+     "ar": "الياقوت",
      "aliases": [
       "Yacout"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=67 ; osm:node/11657309626 ; osm:node/13072263382"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=67 ; osm:node/11657309626 ; osm:node/13072263382 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Feddan Cheikh",
@@ -40324,12 +41213,22 @@
     },
     {
      "fr": "Habous",
-     "ar": "",
+     "ar": "الحبوس",
      "aliases": [
       "Habouss"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65 ; osm:node/12012890792"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65 ; osm:node/12012890792 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Hajja Yezza",
+     "ar": "حي الحاجة يزة",
+     "aliases": [
+      "Lot Hajja Yezza",
+      "Lotissement Hajja Yezza"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=62,63 ; osm:node/11635454224"
     },
     {
      "fr": "Hakima",
@@ -40339,15 +41238,160 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65 ; osm:node/11635454225 ; osm:node/11635454226"
     },
     {
+     "fr": "Hay Assaadiyine",
+     "ar": "حي السعديين",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11812453051"
+    },
+    {
+     "fr": "Hay El Berkaoui",
+     "ar": "درب البركاوي",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11637679992"
+    },
+    {
+     "fr": "Hay El Matar",
+     "ar": "حي المطر",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11998752713"
+    },
+    {
+     "fr": "Hay Er-Rjila",
+     "ar": "الرجيلة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11809515881"
+    },
+    {
+     "fr": "Hay Essalam",
+     "ar": "حي السلام",
+     "aliases": [
+      "Lot Essalam",
+      "Lotissement Essalam",
+      "Assalam"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=62,63,64 ; osm:node/11636079362 ; osm:node/11637567050"
+    },
+    {
      "fr": "Hay Ezzouhour",
-     "ar": "",
+     "ar": "حي الزهور",
      "aliases": [
       "Ezouhour",
       "Residence Ezzohour",
       "Lotissement Ezzohour"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65,67 ; osm:node/12006298418 ; osm:node/12013037407"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65,67 ; osm:node/12006298418 ; osm:node/12013037407 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Hay Koudiat Ben Driss",
+     "ar": "حي كديات بن إدريس",
+     "aliases": [
+      "Cite Kodiat Ben Driss"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=58 ; osm:node/12020109267"
+    },
+    {
+     "fr": "Hay Saada",
+     "ar": "حي السعادة",
+     "aliases": [
+      "Lot Saada",
+      "Saada"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=62,66 ; osm:node/12006308881"
+    },
+    {
+     "fr": "Hay Safaa",
+     "ar": "حي الصفاء",
+     "aliases": [
+      "Lot Safa",
+      "Lotissement Safa",
+      "Safaa"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=62,63,67 ; osm:node/11637679991"
+    },
+    {
+     "fr": "Jawhara",
+     "ar": "حي الجوهرة",
+     "aliases": [
+      "Residence Jawhara",
+      "Lotissement Jawhara"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=67 ; osm:node/11637601984 ; osm:node/13065274088"
+    },
+    {
+     "fr": "Lalla Zahra",
+     "ar": "لالة زهرة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/12007031113"
+    },
+    {
+     "fr": "Lotissement Al Firdaous",
+     "ar": "الفردوس",
+     "aliases": [
+      "Firdaous",
+      "Residence Firdaous",
+      "Lotissement Firdaous"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65,67 ; osm:node/11637601985 ; osm:node/12124100360"
+    },
+    {
+     "fr": "Lotissement Amal",
+     "ar": "حي الأمل",
+     "aliases": [
+      "Lotissement El Amal",
+      "El Amal",
+      "Residence Al Amal",
+      "Hay Al Amal",
+      "Lotissement Al Amal"
+     ],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=63,64,67 ; osm:node/11999726570 ; osm:node/13064503626 ; osm:node/13065274096"
+    },
+    {
+     "fr": "Lotissement Hiba",
+     "ar": "حي هبة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11636089493"
+    },
+    {
+     "fr": "Lotissement Mazagan",
+     "ar": "مازاغان",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/13066084897 ; osm:node/13068540656 ; ar:wikidata:Q555360"
+    },
+    {
+     "fr": "Maghreb Binae",
+     "ar": "حي المغرب بينا",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11999714019"
+    },
+    {
+     "fr": "Mont Fleuri",
+     "ar": "مون فلوري",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11636089561"
+    },
+    {
+     "fr": "Mouilha",
+     "ar": "حي المويلحة",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11812453056"
     },
     {
      "fr": "Najd",
@@ -40358,22 +41402,46 @@
     },
     {
      "fr": "Najmat Al Janoub",
-     "ar": "",
+     "ar": "نجمة الجنوب",
      "aliases": [
       "Residence Najmat Al Janoub",
       "Najmat El Janoub"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=66,67,68 ; osm:node/11999726576 ; osm:node/11999964999 ; osm:node/12000517211"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=66,67,68 ; osm:node/11999726576 ; osm:node/11999964999 ; osm:node/12000517211 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Nassim",
+     "ar": "النسيم",
+     "aliases": [
+      "Hay Nassim",
+      "Nassim 5"
+     ],
+     "ozon": false,
+     "src": "osm:node/11637528552 ; osm:node/11637528559 ; osm:node/11998752722"
     },
     {
      "fr": "Nour Al Mouhit",
-     "ar": "",
+     "ar": "نور المحيط",
      "aliases": [
       "Nour El Mouhit"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=66 ; osm:node/12003627686"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=66 ; osm:node/12003627686 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
+    },
+    {
+     "fr": "Panorama",
+     "ar": "حي بانوراما",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11812453043"
+    },
+    {
+     "fr": "Place El Hansal",
+     "ar": "ساحة الحنصلي",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11805142433"
     },
     {
      "fr": "Seniat El Morakib",
@@ -40383,6 +41451,20 @@
      ],
      "ozon": false,
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=67,68 ; osm:node/11637528529"
+    },
+    {
+     "fr": "Sidi Mouss",
+     "ar": "حي سيدي موسى",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11635454220"
+    },
+    {
+     "fr": "Surcouf",
+     "ar": "السركوف",
+     "aliases": [],
+     "ozon": false,
+     "src": "osm:node/11637679993"
     },
     {
      "fr": "Taraj",
@@ -40987,12 +42069,12 @@
     },
     {
      "fr": "Centre-Ville",
-     "ar": "",
+     "ar": "وسط المدينة",
      "aliases": [
       "Centre Ville"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=58 ; osm:node/13990681210"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=58 ; osm:node/13990681210 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Chakir Fadle Allah",
@@ -42194,12 +43276,12 @@
     },
     {
      "fr": "El Yacout",
-     "ar": "",
+     "ar": "الياقوت",
      "aliases": [
       "Yacout"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=67 ; osm:node/11657309626 ; osm:node/13072263382"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=67 ; osm:node/11657309626 ; osm:node/13072263382 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Eme Arrondissement",
@@ -42344,12 +43426,12 @@
     },
     {
      "fr": "Habous",
-     "ar": "",
+     "ar": "الحبوس",
      "aliases": [
       "Habouss"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65 ; osm:node/12012890792"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65 ; osm:node/12012890792 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Haj Ahmed Lahlali",
@@ -42468,14 +43550,14 @@
     },
     {
      "fr": "Hay Ezzouhour",
-     "ar": "",
+     "ar": "حي الزهور",
      "aliases": [
       "Ezouhour",
       "Residence Ezzohour",
       "Lotissement Ezzohour"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65,67 ; osm:node/12006298418 ; osm:node/12013037407"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65,67 ; osm:node/12006298418 ; osm:node/12013037407 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Hay Koudiat Ben Driss",
@@ -43018,6 +44100,13 @@
      "src": "osm:node/12125721494"
     },
     {
+     "fr": "L’Hygienne",
+     "ar": "",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65"
+    },
+    {
      "fr": "Lillia",
      "ar": "",
      "aliases": [],
@@ -43171,6 +44260,13 @@
      "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=61,63"
     },
     {
+     "fr": "Lot d’Ahbitation Moukawama",
+     "ar": "",
+     "aliases": [],
+     "ozon": false,
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=61"
+    },
+    {
      "fr": "Lot Deffar",
      "ar": "",
      "aliases": [],
@@ -43179,13 +44275,6 @@
     },
     {
      "fr": "Lot des FAR",
-     "ar": "",
-     "aliases": [],
-     "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=61"
-    },
-    {
-     "fr": "Lot d’Ahbitation Moukawama",
      "ar": "",
      "aliases": [],
      "ozon": false,
@@ -44917,13 +46006,6 @@
      "src": "osm:node/12121208482"
     },
     {
-     "fr": "L’Hygienne",
-     "ar": "",
-     "aliases": [],
-     "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=65"
-    },
-    {
      "fr": "Mabra Al Wafaa",
      "ar": "",
      "aliases": [],
@@ -45116,13 +46198,13 @@
     },
     {
      "fr": "Najmat Al Janoub",
-     "ar": "",
+     "ar": "نجمة الجنوب",
      "aliases": [
       "Residence Najmat Al Janoub",
       "Najmat El Janoub"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=66,67,68 ; osm:node/11999726576 ; osm:node/11999964999 ; osm:node/12000517211"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=66,67,68 ; osm:node/11999726576 ; osm:node/11999964999 ; osm:node/12000517211 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Nakhil",
@@ -45164,12 +46246,12 @@
     },
     {
      "fr": "Nour Al Mouhit",
-     "ar": "",
+     "ar": "نور المحيط",
      "aliases": [
       "Nour El Mouhit"
      ],
      "ozon": false,
-     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=66 ; osm:node/12003627686"
+     "src": "barid:https://www.codepostal.ma/annuaire.pdf#page=66 ; osm:node/12003627686 ; ar:ajout manuel 2026-11-22 (nom d'usage courant)"
     },
     {
      "fr": "Nour El Houda",

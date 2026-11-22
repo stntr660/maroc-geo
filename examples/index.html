@@ -30,8 +30,8 @@
   <section>
     <label for="city">Ville</label>
     <select id="city"></select>
-    <label for="q">Quartier</label>
-    <input id="q" placeholder="maarif, حي حسني, sidi mouman…" autocomplete="off">
+    <label for="q">Quartier · الحي</label>
+    <input id="q" placeholder="maarif, الحي المحمدي, sidi mouman…" autocomplete="off">
     <ul id="list"></ul>
   </section>
 </main>
@@ -91,11 +91,14 @@ const select = document.getElementById("city"), input = document.getElementById(
 select.innerHTML = Object.keys(nb.cities).map((c) => `<option>${c}</option>`).join("");
 function render() {
   const c = nb.cities[select.value], q = norm(input.value);
-  const rows = q ? c.all.filter((n) => [n.fr, n.ar, ...n.aliases].some((k) => k && norm(k).includes(q))).slice(0, 60) : c.main;
+  // Default list = well-known neighbourhoods (main). From two letters, search everything, well-known ones first.
+  const hit = (n) => [n.fr, n.ar, ...n.aliases].some((k) => k && norm(k).includes(q));
+  const known = new Set(c.main.map((n) => n.fr));
+  const rows = q.length >= 2 ? [...c.main.filter(hit), ...c.all.filter((n) => !known.has(n.fr) && hit(n))].slice(0, 60) : q ? c.main.filter(hit) : c.main;
   list.innerHTML = "";
   for (const n of rows) {
     const li = document.createElement("li");
-    li.append(Object.assign(document.createElement("span"), { textContent: n.fr }), Object.assign(document.createElement("span"), { textContent: n.ar, dir: "rtl" }));
+    li.append(Object.assign(document.createElement("bdi"), { textContent: n.fr, dir: "ltr" }), Object.assign(document.createElement("bdi"), { textContent: n.ar, dir: "rtl" }));
     list.append(li);
   }
 }

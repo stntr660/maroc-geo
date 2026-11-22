@@ -1,6 +1,6 @@
 {
   "name": "maroc-geo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Morocco geography for forms, delivery and dashboards: regions, provinces, communes (HCP 2024), 391 towns in French and Arabic, neighbourhoods of 14 big cities, a ready map (TopoJSON + d3) and forgiving search.",
   "type": "module",
   "license": "MIT",
